@@ -1,0 +1,12 @@
+# Python
+__pycache__
+
+# CAD
+*.stl
+*.FCStd1
+
+# Artifacts
+*.png
+*.jpg
+*.wav
+*.pdf
