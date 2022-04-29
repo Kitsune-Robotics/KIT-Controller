@@ -4,12 +4,12 @@ Electronics
 Schematics
 ==========
 
-.. image:: ../../_hardwareOutput/Crawler-schematic.png
+.. image:: ../../_hardwareOutput/LC-Mainboard-schematic.png
     :width: 800
 
 
 Renders
 =======
 
-.. image:: ../../_hardwareOutput/Crawler-3D_top.png
+.. image:: ../../_hardwareOutput/LC-Mainboard-3D_top.png
     :width: 600

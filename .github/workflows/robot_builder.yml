@@ -74,7 +74,7 @@ jobs:
           path: _hardwareOutput
 
       # Convert svg graphics
-      - run: convert -density 300 _hardwareOutput/Crawler-schematic.svg _hardwareOutput/Crawler-schematic.png
+      - run: convert -density 300 _hardwareOutput/LC-Mainboard-schematic.svg _hardwareOutput/LC-Mainboard-schematic.png
 
       - run: cd Docs && make latexpdf
 
@@ -114,7 +114,7 @@ jobs:
         with:
           webhook_id: ${{ secrets.WEBHOOK_ID }}
           webhook_token: ${{ secrets.WEBHOOK_TOKEN }}
-          file: "Crawler-3D_top.png"
+          file: "LC-Mainboard-3D_top.png"
 
   publish:
     # Only run on tags
