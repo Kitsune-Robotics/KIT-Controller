@@ -46,3 +46,4 @@ fp-info-cache
 
 # dev artifacts
 .vscode
+_build
