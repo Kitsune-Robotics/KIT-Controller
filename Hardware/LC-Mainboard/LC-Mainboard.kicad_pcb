@@ -4604,7 +4604,7 @@
       (net 22 "unconnected-(J2-Pad5)") (pintype "passive+no_connect") (tstamp b3cb87f7-256f-493b-9c8f-1e85ebba9ab9))
     (pad "6" thru_hole circle (at 6.35 -2.54 180) (size 1.52 1.52) (drill 0.76) (layers *.Cu *.Mask)
       (net 23 "unconnected-(J2-Pad6)") (pintype "passive+no_connect") (tstamp 047aa3bb-6884-4df5-83ed-7ea551b329b1))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_RJ.3dshapes/RJ12_Amphenol_54601.wrl"
+    (model "${KENWOODFOX_3DMODELS}/RJ12.wrl"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
