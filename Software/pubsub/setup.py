@@ -12,12 +12,14 @@ setup(
     ],
     install_requires=["setuptools"],
     zip_safe=True,
-    maintainer="joe",
+    maintainer="KW1FOX",
     maintainer_email="kenwood364@gmail.com",
-    description="TODO: Package description",
-    license="TODO: License declaration",
+    description="Simple pubsub",
+    license="BSD",
     tests_require=["pytest"],
     entry_points={
-        "console_scripts": [],
+        "console_scripts": [
+            "talker = pubsub.publisher_member_function:main",
+        ],
     },
 )
