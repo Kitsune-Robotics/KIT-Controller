@@ -5,9 +5,9 @@ kibot:
 preflight:
   run_erc: true
   update_xml: true
-  run_drc: false
+  run_drc: true
   check_zone_fills: false
-  ignore_unconnected: true
+  ignore_unconnected: false
 
   # Replace variables
   set_text_variables:
