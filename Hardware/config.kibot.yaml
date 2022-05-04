@@ -3,11 +3,11 @@ kibot:
 # Look into pcb_replace, looks sick! Also sch_replace
 
 preflight:
-  # Warn us about unconnected
-  ignore_unconnected: true
-
-  # Do a DRC check
+  run_erc: true
+  update_xml: true
   run_drc: false
+  check_zone_fills: false
+  ignore_unconnected: true
 
   # Replace variables
   set_text_variables:
