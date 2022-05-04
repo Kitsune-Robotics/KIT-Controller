@@ -3599,7 +3599,7 @@
   (symbol (lib_id "Device:C_Small") (at 268.605 66.675 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 02f7cd38-e80c-4cea-990c-b710e96f02a9)
-    (property "Reference" "C?" (id 0) (at 270.51 65.405 0)
+    (property "Reference" "C7" (id 0) (at 270.51 65.405 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10μf" (id 1) (at 270.51 67.945 0)
@@ -3634,7 +3634,7 @@
   (symbol (lib_id "power:GND") (at 268.605 70.485 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 07230a55-a803-4339-bb34-5bdc31fdb1ae)
-    (property "Reference" "#PWR?" (id 0) (at 268.605 76.835 0)
+    (property "Reference" "#PWR0136" (id 0) (at 268.605 76.835 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (id 1) (at 268.605 74.295 0))
@@ -3975,7 +3975,7 @@
   (symbol (lib_id "power:+3.3V") (at 268.605 62.865 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 344c4d5b-424a-4064-8eca-089caae1cde1)
-    (property "Reference" "#PWR?" (id 0) (at 268.605 66.675 0)
+    (property "Reference" "#PWR0135" (id 0) (at 268.605 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (id 1) (at 268.605 59.055 0))
@@ -5494,11 +5494,11 @@
     (path "/b6842b5d-8dc0-41ae-8609-2499e7be2db6"
       (reference "#PWR0134") (unit 1) (value "GND") (footprint "")
     )
-    (path "/07230a55-a803-4339-bb34-5bdc31fdb1ae"
-      (reference "#PWR?") (unit 1) (value "GND") (footprint "")
-    )
     (path "/344c4d5b-424a-4064-8eca-089caae1cde1"
-      (reference "#PWR?") (unit 1) (value "+3.3V") (footprint "")
+      (reference "#PWR0135") (unit 1) (value "+3.3V") (footprint "")
+    )
+    (path "/07230a55-a803-4339-bb34-5bdc31fdb1ae"
+      (reference "#PWR0136") (unit 1) (value "GND") (footprint "")
     )
     (path "/b4d14e79-fbd4-48bd-957f-e2fae3e8fb12"
       (reference "C1") (unit 1) (value "0.1μf") (footprint "Capacitor_SMD:C_0805_2012Metric")
@@ -5519,7 +5519,7 @@
       (reference "C6") (unit 1) (value "0.1μf") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/02f7cd38-e80c-4cea-990c-b710e96f02a9"
-      (reference "C?") (unit 1) (value "10μf") (footprint "Capacitor_SMD:C_Elec_6.3x5.4")
+      (reference "C7") (unit 1) (value "10μf") (footprint "Capacitor_SMD:C_Elec_6.3x5.4")
     )
     (path "/9b52dbe1-88ca-4ae1-a70d-e55e71d1adec"
       (reference "D1") (unit 1) (value "SLR_RX") (footprint "LED_SMD:LED_0805_2012Metric")
