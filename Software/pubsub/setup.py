@@ -20,6 +20,7 @@ setup(
     entry_points={
         "console_scripts": [
             "talker = pubsub.publisher_member_function:main",
+            "listener = pubsub.subscriber_member_function:main",
         ],
     },
 )
