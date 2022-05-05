@@ -1,4 +1,4 @@
-name: Robot Builder
+name: Robot Hardware
 
 on:
   push:
@@ -6,6 +6,9 @@ on:
       - "main"
     tags:
       - "*"
+    paths:
+      - "Hardware/**"
+
   pull_request:
 
 jobs:
