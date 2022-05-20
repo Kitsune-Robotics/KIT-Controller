@@ -1,6 +1,6 @@
 from setuptools import setup
 
-package_name = "pubsub"
+package_name = "py_pubsub"
 
 setup(
     name=package_name,
@@ -12,15 +12,15 @@ setup(
     ],
     install_requires=["setuptools"],
     zip_safe=True,
-    maintainer="KW1FOX",
+    maintainer="joe",
     maintainer_email="kenwood364@gmail.com",
-    description="Simple pubsub",
-    license="BSD",
+    description="TODO: Package description",
+    license="TODO: License declaration",
     tests_require=["pytest"],
     entry_points={
         "console_scripts": [
-            "talker = pubsub.publisher_member_function:main",
-            "listener = pubsub.subscriber_member_function:main",
+            "talker = py_pubsub.publisher_member_function:main",
+            "listener = py_pubsub.subscriber_member_function:main",
         ],
     },
 )
