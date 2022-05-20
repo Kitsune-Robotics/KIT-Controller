@@ -6,4 +6,4 @@ rosdep:
 	rosdep install -i --from-path src --rosdistro galactic -y
 
 colcon:
-	colcon build --packages-select py_pubsub
+	colcon build --packages-select py_pubsub lcd_viewer
