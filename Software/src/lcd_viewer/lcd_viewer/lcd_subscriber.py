@@ -23,7 +23,7 @@ class LCDSubscriber(Node):
         )
 
         # Setup a timer to iterate through the stats
-        timer_period = 6  # Seconds to display a particular stat
+        timer_period = 8  # Seconds to display a particular stat
         self.timer = self.create_timer(timer_period, self.iter_lcd)
         self.stat_idx = 0  # Current stat index
         self.stat = []  # Currently displayed stat
@@ -31,18 +31,23 @@ class LCDSubscriber(Node):
         # Create LCD object
         self.lcd = LCD(width=self.lcd_width, rows=self.lcd_height)
 
+        self.get_logger().info(f"LCD Subscriber created.")
+
         # Inital callback
         self.iter_lcd()
 
     def listener_callback(self, msg):
-        self.get_logger().info(f"Got: {msg.value} for stat {msg.key}")
+        self.get_logger().debug(f"Got: {msg.value} for stat {msg.key}")
 
         self.statdict[str(msg.key)] = str(msg.value)
         self.get_logger().debug(f"Holding {len(self.statdict)} stats.")
 
         # Special case where if the value on screen is being displayed, we can 'live update' the value
-        if str(msg.key) == self.stat[0]:
-            self.lcd.text(self.stat[1], 2)  # Value
+        try:
+            if str(msg.key) == self.stat[0]:
+                self.lcd.text(msg.value, 2)  # Value
+        except IndexError:
+            pass
 
     def iter_lcd(self):
         try:

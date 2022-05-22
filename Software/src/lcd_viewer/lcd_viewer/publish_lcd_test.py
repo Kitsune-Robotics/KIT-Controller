@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+import psutil
+import random
+
 import rclpy
 from rclpy.node import Node
 
@@ -20,35 +23,32 @@ from lcd_interfaces.msg import Stat
 
 class MinimalPublisher(Node):
     def __init__(self):
-        super().__init__("minimal_publisher")
-        self.publisher_ = self.create_publisher(Stat, "lcd/lcd", 10)
-        timer_period = 2  # seconds
-        self.timer = self.create_timer(timer_period, self.timer_callback)
-        self.i = 0
+        super().__init__("lcd_test_publisher")
+        self.stat_pub = self.create_publisher(Stat, "lcd/lcd", 10)
 
-    def timer_callback(self):
+        # Update Voltage
+        self.create_timer(2, self.update_voltage)
+
+        # Update Temp
+        self.create_timer(1, self.update_temp)
+
+        self.get_logger().info(f"Test Publisher Created")
+
+    def update_voltage(self):
         msg = Stat()
-
         msg.key = "Voltage"
-        msg.value = str(self.i)
+        msg.value = f"{12.8 + random.random() - 0.5:.2f}"
 
-        self.publisher_.publish(msg)
-        self.get_logger().info(f"Publishing {msg.value} to {msg.key}.")
-        self.i += 1
+        self.get_logger().debug(f"Publishing {msg.value} to {msg.key}.")
+        self.stat_pub.publish(msg)
 
-        msg.key = "Viewers"
-        msg.value = str(self.i + 20)
+    def update_temp(self):
+        msg = Stat()
+        msg.key = "CPU Temp"
+        msg.value = f"{psutil.sensors_temperatures()['cpu_thermal'][0].current:.2f}"
 
-        self.publisher_.publish(msg)
-        self.get_logger().info(f"Publishing {msg.value} to {msg.key}.")
-        self.i += 1
-
-        msg.key = "Cool Factor"
-        msg.value = str(self.i - 90)
-
-        self.publisher_.publish(msg)
-        self.get_logger().info(f"Publishing {msg.value} to {msg.key}.")
-        self.i += 1
+        self.get_logger().debug(f"Publishing {msg.value} to {msg.key}.")
+        self.stat_pub.publish(msg)
 
 
 def main(args=None):
