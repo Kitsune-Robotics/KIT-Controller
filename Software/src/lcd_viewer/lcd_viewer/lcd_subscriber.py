@@ -4,7 +4,6 @@ from rclpy.node import Node
 from rpi_lcd import LCD
 
 from lcd_interfaces.msg import Stat
-from textwrap import wrap
 
 
 class LCDSubscriber(Node):
@@ -24,9 +23,10 @@ class LCDSubscriber(Node):
         )
 
         # Setup a timer to iterate through the stats
-        timer_period = 6
+        timer_period = 6  # Seconds to display a particular stat
         self.timer = self.create_timer(timer_period, self.iter_lcd)
-        self.stat_idx = 0
+        self.stat_idx = 0  # Current stat index
+        self.stat = []  # Currently displayed stat
 
         # Create LCD object
         self.lcd = LCD(width=self.lcd_width, rows=self.lcd_height)
@@ -40,18 +40,20 @@ class LCDSubscriber(Node):
         self.statdict[str(msg.key)] = str(msg.value)
         self.get_logger().debug(f"Holding {len(self.statdict)} stats.")
 
-        self.get_logger().debug(str(list(self.statdict.items())))
+        # Special case where if the value on screen is being displayed, we can 'live update' the value
+        if str(msg.key) == self.stat[0]:
+            self.lcd.text(self.stat[1], 2)  # Value
 
     def iter_lcd(self):
         try:
-            stat = list(self.statdict.items())[self.stat_idx]
+            self.stat = list(self.statdict.items())[self.stat_idx]
 
             self.get_logger().debug(
-                f"Updating stat {stat[0]} with value {stat[1]} at index {self.stat_idx}."
+                f"Updating stat {self.stat[0]} with value {self.stat[1]} at index {self.stat_idx}."
             )
 
-            self.lcd.text(stat[0], 1)  # key
-            self.lcd.text(stat[1], 2)  # Value
+            self.lcd.text(self.stat[0], 1)  # key
+            self.lcd.text(self.stat[1], 2)  # Value
 
             self.stat_idx = self.stat_idx + 1
             if self.stat_idx >= len(self.statdict):
