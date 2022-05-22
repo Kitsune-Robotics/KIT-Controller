@@ -8,14 +8,14 @@ def generate_launch_description():
             Node(
                 package="lcd_viewer",
                 namespace="lcd_viewer",
-                executable="talker",
-                name="lcd_talker",
+                executable="test",
+                name="lcd_test",
             ),
             Node(
                 package="lcd_viewer",
                 namespace="lcd_viewer",
-                executable="listener",
-                name="lcd_listener",
+                executable="subscriber",
+                name="lcd_subscriber",
             ),
         ]
     )

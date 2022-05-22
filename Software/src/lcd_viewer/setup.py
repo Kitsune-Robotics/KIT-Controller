@@ -10,17 +10,17 @@ setup(
         ("share/ament_index/resource_index/packages", ["resource/" + package_name]),
         ("share/" + package_name, ["package.xml"]),
     ],
-    install_requires=["setuptools"],
+    install_requires=["setuptools", "smbus", "rpi-lcd"],
     zip_safe=True,
-    maintainer="joe",
+    maintainer="Joe",
     maintainer_email="kenwood364@gmail.com",
-    description="TODO: Package description",
-    license="TODO: License declaration",
+    description="Manages Displaying and Cycling information on a 20x2 LCD display.",
+    license="BSD",
     tests_require=["pytest"],
     entry_points={
         "console_scripts": [
-            "talker = lcd_viewer.publish_lcd_test:main",
-            "listener = lcd_viewer.lcd_subscriber:main",
+            "test = lcd_viewer.publish_lcd_test:main",
+            "subscriber = lcd_viewer.lcd_subscriber:main",
         ],
     },
 )

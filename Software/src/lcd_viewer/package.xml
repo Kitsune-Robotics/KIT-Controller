@@ -3,8 +3,8 @@
 <package format="3">
   <name>lcd_viewer</name>
   <version>0.0.0</version>
-  <description>Simple package to listen for LCD Messages and display them.</description>
-  <maintainer email="kenwood364@gmail.com">joe</maintainer>
+  <description>Manages Displaying and Cycling information on a 20x2 LCD display.</description>
+  <maintainer email="kenwood364@gmail.com">Joe</maintainer>
   <license>BSD</license>
 
   <!-- Deps -->
