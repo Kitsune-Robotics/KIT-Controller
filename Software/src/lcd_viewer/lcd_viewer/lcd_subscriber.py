@@ -3,25 +3,31 @@ import rclpy
 from rclpy.node import Node
 from rpi_lcd import LCD
 
-from std_msgs.msg import String
+from lcd_interfaces.msg import Stat
+from textwrap import wrap
 
 
 class LCDSubscriber(Node):
     def __init__(self):
         super().__init__("lcd_subscriber")
+
+        # Consts
+        self.lcd_width = 16
+        self.lcd_height = 2
+
+        # Subscribe to a particular topic with a callback
         self.subscription = self.create_subscription(
-            String, "lcd/lcd", self.listener_callback, 10
+            Stat, "lcd/lcd", self.listener_callback, 10
         )
 
         # Create LCD object
         self.lcd = LCD()
 
     def listener_callback(self, msg):
-        self.get_logger().info(f"Got: {msg.data}")
+        self.get_logger().info(f"Got: {msg.value}")
 
-        # String truncate here
-
-        self.lcd.text(str(msg.data), 1)
+        self.lcd.text(str(msg.key), 1)
+        self.lcd.text(str(msg.value), 2)
 
 
 def main(args=None):

@@ -15,22 +15,25 @@
 import rclpy
 from rclpy.node import Node
 
-from std_msgs.msg import String
+from lcd_interfaces.msg import Stat
 
 
 class MinimalPublisher(Node):
     def __init__(self):
         super().__init__("minimal_publisher")
-        self.publisher_ = self.create_publisher(String, "lcd/lcd", 10)
+        self.publisher_ = self.create_publisher(Stat, "lcd/lcd", 10)
         timer_period = 2  # seconds
         self.timer = self.create_timer(timer_period, self.timer_callback)
         self.i = 0
 
     def timer_callback(self):
-        msg = String()
-        msg.data = "Hello World: %d" % self.i
+        msg = Stat()
+
+        msg.key = "Voltage"
+        msg.value = str(self.i)
+
         self.publisher_.publish(msg)
-        self.get_logger().info('Publishing: "%s"' % msg.data)
+        self.get_logger().info(f"Publishing {msg.value} to {msg.key}.")
         self.i += 1
 
 
