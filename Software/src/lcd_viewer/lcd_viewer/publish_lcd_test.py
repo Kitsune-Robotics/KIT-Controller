@@ -36,6 +36,20 @@ class MinimalPublisher(Node):
         self.get_logger().info(f"Publishing {msg.value} to {msg.key}.")
         self.i += 1
 
+        msg.key = "Viewers"
+        msg.value = str(self.i + 20)
+
+        self.publisher_.publish(msg)
+        self.get_logger().info(f"Publishing {msg.value} to {msg.key}.")
+        self.i += 1
+
+        msg.key = "Cool Factor"
+        msg.value = str(self.i - 90)
+
+        self.publisher_.publish(msg)
+        self.get_logger().info(f"Publishing {msg.value} to {msg.key}.")
+        self.i += 1
+
 
 def main(args=None):
     rclpy.init(args=args)
