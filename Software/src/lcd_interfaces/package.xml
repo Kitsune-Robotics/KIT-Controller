@@ -3,9 +3,9 @@
 <package format="3">
   <name>lcd_interfaces</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="kenwood364@gmail.com">joe</maintainer>
-  <license>TODO: License declaration</license>
+  <description>Interfaces for updating the LCD</description>
+  <maintainer email="kenwood364@gmail.com">Joe</maintainer>
+  <license>BSD</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
@@ -13,11 +13,8 @@
   <test_depend>ament_lint_common</test_depend>
 
   <!-- From tutorial -->
-
   <build_depend>rosidl_default_generators</build_depend>
-
   <exec_depend>rosidl_default_runtime</exec_depend>
-
   <member_of_group>rosidl_interface_packages</member_of_group>
 
   <export>
