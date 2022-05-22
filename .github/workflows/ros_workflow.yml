@@ -31,14 +31,15 @@ jobs:
         if: steps.action_black.outputs.is_formatted == 'true'
         run: exit 1
 
-  build-and-test:
+  build_test_lcd_viewer:
+    name: Package lcd_viewer
     runs-on: ubuntu-latest
     steps:
       - uses: ros-tooling/setup-ros@v0.3
         with:
           required-ros-distributions: galactic
 
-      - uses: ros-tooling/action-ros-ci@v0.2
+      - uses: ros-tooling/action-ros-ci@0.2.5
         with:
           package-name: lcd_viewer
           target-ros2-distro: galactic
