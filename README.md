@@ -1,4 +1,5 @@
 [![Robot Hardware](https://github.com/Kitsune-Robotics/kw1fox-3/actions/workflows/hardware_workflow.yml/badge.svg)](https://github.com/Kitsune-Robotics/kw1fox-3/actions/workflows/hardware_workflow.yml)
+[![ROS Workflow](https://github.com/Kitsune-Robotics/kw1fox-3/actions/workflows/ros_workflow.yml/badge.svg)](https://github.com/Kitsune-Robotics/kw1fox-3/actions/workflows/ros_workflow.yml)
 
 # kw1fox-3
 
