@@ -1,3 +1,6 @@
 [submodule "Hardware/LC-Mainboard/Libraries/kenwoodfox-kicad-libraries"]
 	path = Hardware/LC-Mainboard/Libraries/kenwoodfox-kicad-libraries
 	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries.git
+[submodule "Hardware/LC-Mainboard/Libraries/rpi-cm4-carrier-template"]
+	path = Hardware/LC-Mainboard/Libraries/rpi-cm4-carrier-template
+	url = https://github.com/ShawnHymel/rpi-cm4-carrier-template.git
