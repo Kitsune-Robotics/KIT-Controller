@@ -1,4 +1,5 @@
 (sym_lib_table
   (lib (name "KenwoodFox")(type "KiCad")(uri "${KIPRJMOD}/Libraries/kenwoodfox-kicad-libraries/libraries/KenwoodFox.kicad_sym")(options "")(descr ""))
   (lib (name "CM4IO")(type "KiCad")(uri "${KIPRJMOD}/Libraries/rpi-cm4-carrier-template/hardware/libraries/CM4IO/CM4IO.kicad_sym")(options "")(descr ""))
+  (lib (name "nokia_5110-3310_lcd")(type "Legacy")(uri "${KIPRJMOD}/Libraries/Nokia_5110/components/Nokia_5110-3310_LCD/nokia_5110-3310_lcd.lib")(options "")(descr ""))
 )

@@ -4,3 +4,6 @@
 [submodule "Hardware/LC-Mainboard/Libraries/rpi-cm4-carrier-template"]
 	path = Hardware/LC-Mainboard/Libraries/rpi-cm4-carrier-template
 	url = https://github.com/ShawnHymel/rpi-cm4-carrier-template.git
+[submodule "Hardware/LC-Mainboard/Libraries/kicad-libs"]
+	path = Hardware/LC-Mainboard/Libraries/Nokia_5110
+	url = https://github.com/sgreg/kicad-libs.git
