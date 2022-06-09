@@ -39,7 +39,7 @@ jobs:
 
       - uses: actions/upload-artifact@v2
         with:
-          name: AB-Transport_Arduino_Binaries
+          name: LC_Mainboard_Binaries
           path: Firmware/.pio/build/pico/firmware.*
 
   delint:
