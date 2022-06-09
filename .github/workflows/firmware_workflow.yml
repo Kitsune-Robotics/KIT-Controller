@@ -35,12 +35,12 @@ jobs:
           pip install --upgrade platformio
 
       - name: Run PlatformIO
-        run: cd firmware && make
+        run: cd Firmware && make
 
       - uses: actions/upload-artifact@v2
         with:
           name: AB-Transport_Arduino_Binaries
-          path: firmware/.pio/build/pico/firmware.*
+          path: Firmware/.pio/build/pico/firmware.*
 
   delint:
     runs-on: ubuntu-latest
@@ -68,4 +68,4 @@ jobs:
           pip install --upgrade platformio
 
       - name: Run Delinter
-        run: firmware && pio check
+        run: Firmware && pio check
