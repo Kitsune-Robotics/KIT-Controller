@@ -6,10 +6,9 @@ on:
       - "main"
     tags:
       - "*"
+  pull_request:
     paths:
       - "Hardware/**"
-
-  pull_request:
 
 jobs:
   KiCad_Hardware:
