@@ -36,4 +36,4 @@ test:
 debug: flash monitor
 
 monitor:
-	pio device monitor --filter=direct --filter=time
+	pio device monitor
