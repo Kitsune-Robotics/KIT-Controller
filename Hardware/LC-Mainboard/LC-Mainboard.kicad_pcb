@@ -88,6 +88,8 @@
     )
   )
 
+  (property "FULL_REVISION" "v0.0-RC0-0-g000000")
+
   (net 0 "")
   (net 1 "SDA")
   (net 2 "SCL")
@@ -5082,7 +5084,7 @@
   (dimension (type aligned) (layer "Cmts.User") (tstamp 2bf3a2e5-f411-46ff-949b-3e7b4170f108)
     (pts (xy 183.90922 72.24) (xy 183.90922 129.39))
     (height -19.69)
-    (gr_text "2.2500 in" (at 202.44922 100.815 90) (layer "Cmts.User") (tstamp 2bf3a2e5-f411-46ff-949b-3e7b4170f108)
+    (gr_text "57.1500 mm" (at 202.44922 100.815 90) (layer "Cmts.User") (tstamp 2bf3a2e5-f411-46ff-949b-3e7b4170f108)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (format (units 3) (units_format 1) (precision 4))
@@ -5091,7 +5093,7 @@
   (dimension (type aligned) (layer "Cmts.User") (tstamp eccc4eee-4290-4334-8514-2f5669abdefa)
     (pts (xy 107.71 72.24) (xy 183.90922 72.24))
     (height -23.25)
-    (gr_text "3.0000 in" (at 145.80961 47.84) (layer "Cmts.User") (tstamp eccc4eee-4290-4334-8514-2f5669abdefa)
+    (gr_text "76.1992 mm" (at 145.80961 47.84) (layer "Cmts.User") (tstamp eccc4eee-4290-4334-8514-2f5669abdefa)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (format (units 3) (units_format 1) (precision 4))
