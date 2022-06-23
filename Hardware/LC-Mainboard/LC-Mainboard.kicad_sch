@@ -3664,7 +3664,7 @@
     (property "Value" "10μf" (id 1) (at 30.48 153.67 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_Elec_6.3x5.4" (id 2) (at 28.575 152.4 0)
+    (property "Footprint" "Capacitor_SMD:C_Elec_4x5.4" (id 2) (at 28.575 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 28.575 152.4 0)
@@ -3683,7 +3683,7 @@
     (property "Value" "10μf" (id 1) (at 274.955 67.945 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Capacitor_SMD:C_Elec_6.3x5.4" (id 2) (at 273.05 66.675 0)
+    (property "Footprint" "Capacitor_SMD:C_Elec_4x5.4" (id 2) (at 273.05 66.675 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (id 3) (at 273.05 66.675 0)
@@ -5623,13 +5623,13 @@
       (reference "C4") (unit 1) (value "0.1μf") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/01c4ca08-8a4f-4fcc-ac99-649d9d9accf3"
-      (reference "C5") (unit 1) (value "10μf") (footprint "Capacitor_SMD:C_Elec_6.3x5.4")
+      (reference "C5") (unit 1) (value "10μf") (footprint "Capacitor_SMD:C_Elec_4x5.4")
     )
     (path "/7980da57-e531-4bfc-96c3-7b523e53653f"
       (reference "C6") (unit 1) (value "0.1μf") (footprint "Capacitor_SMD:C_0805_2012Metric")
     )
     (path "/02f7cd38-e80c-4cea-990c-b710e96f02a9"
-      (reference "C7") (unit 1) (value "10μf") (footprint "Capacitor_SMD:C_Elec_6.3x5.4")
+      (reference "C7") (unit 1) (value "10μf") (footprint "Capacitor_SMD:C_Elec_4x5.4")
     )
     (path "/9b52dbe1-88ca-4ae1-a70d-e55e71d1adec"
       (reference "D1") (unit 1) (value "SLR_RX") (footprint "LED_SMD:LED_0805_2012Metric")
