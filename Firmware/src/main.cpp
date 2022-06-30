@@ -7,7 +7,7 @@ PCD8544 lcd = PCD8544(6, 7, 4, 8, 5);
 void setup(void)
 {
     // initialize the digital pin as an output.
-    pinMode(LED_BUILTIN, OUTPUT);
+    pinMode(16, OUTPUT);
 
     lcd.begin(84, 48);
 }
@@ -15,10 +15,10 @@ void setup(void)
 // the loop routine runs over and over again forever:
 void loop()
 {
-    digitalWrite(LED_BUILTIN, HIGH); // turn the LED on (HIGH is the voltage level)
+    digitalWrite(16, HIGH); // turn the LED on (HIGH is the voltage level)
     Serial.println("High");
-    delay(1000);                    // wait for a second
-    digitalWrite(LED_BUILTIN, LOW); // turn the LED off by making the voltage LOW
+    delay(1000);           // wait for a second
+    digitalWrite(16, LOW); // turn the LED off by making the voltage LOW
     Serial.println("Low");
     delay(1000); // wait for a second
 
