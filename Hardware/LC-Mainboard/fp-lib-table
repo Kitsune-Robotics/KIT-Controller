@@ -1,6 +1,5 @@
 (fp_lib_table
   (lib (name "KenwoodFox")(type "KiCad")(uri "${KIPRJMOD}/Libraries/kenwoodfox-kicad-libraries/footprints/KenwoodFox.pretty")(options "")(descr ""))
-  (lib (name "CM4IO")(type "KiCad")(uri "${KIPRJMOD}/Libraries/rpi-cm4-carrier-template/hardware/libraries/CM4IO/CM4IO.pretty")(options "")(descr ""))
   (lib (name "Nokia_5110-3310_LCD")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Nokia_5110/footprints/Nokia_5110-3310_LCD.pretty")(options "")(descr ""))
   (lib (name "LCD_Connectors")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Nokia_5110/footprints/LCD_Connectors.pretty")(options "")(descr ""))
   (lib (name "Artwork_4chord-midi")(type "KiCad")(uri "${KIPRJMOD}/Libraries/Nokia_5110/footprints/Artwork_4chord-midi.pretty")(options "")(descr ""))
