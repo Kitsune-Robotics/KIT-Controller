@@ -19,6 +19,8 @@ preflight:
       command: "date '+%Y-%m-%d'"
     - name: "KENWOODFOX_3DMODELS" # My custom libs!
       command: "echo 'Hardware/KIT_Controller/Libraries/kenwoodfox-kicad-libraries/3d'"
+    - name: "SGREG_3DMODELS"
+      command: "echo 'Hardware/KIT_Controller/Libraries/sgreg-kicad-libraries/3d'"
 
 outputs:
   - name: "Images"
