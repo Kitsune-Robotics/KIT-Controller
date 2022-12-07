@@ -30,8 +30,8 @@ jobs:
           dir: _hardwareOutput
 
           # Hardware Files
-          schema: "Hardware/LC-KIT_Controller/LC-KIT_Controller.kicad_sch"
-          board: "Hardware/LC-KIT_Controller/LC-KIT_Controller.kicad_pcb"
+          schema: "Hardware/KIT_Controller/KIT_Controller.kicad_sch"
+          board: "Hardware/KIT_Controller/KIT_Controller.kicad_pcb"
 
       - name: upload results
         uses: actions/upload-artifact@v2
