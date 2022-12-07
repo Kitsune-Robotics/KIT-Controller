@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name "KenwoodFox")(type "KiCad")(uri "${KIPRJMOD}/Libraries/kenwoodfox-kicad-libraries/footprints/KenwoodFox.pretty")(options "")(descr ""))
+  (lib (name "LCD_Connectors")(type "KiCad")(uri "${KIPRJMOD}/Libraries/sgreg-kicad-libraries/footprints/LCD_Connectors.pretty")(options "")(descr ""))
+  (lib (name "Nokia_5110-3310_LCD")(type "KiCad")(uri "${KIPRJMOD}/Libraries/sgreg-kicad-libraries/footprints/Nokia_5110-3310_LCD.pretty")(options "")(descr ""))
+)
