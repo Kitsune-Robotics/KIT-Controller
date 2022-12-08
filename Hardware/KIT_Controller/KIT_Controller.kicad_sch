@@ -1646,6 +1646,15 @@
     (path "/ede729ed-cb76-4bcb-a0f0-4eb10b7851ab"
       (reference "#PWR0104") (unit 1) (value "GND") (footprint "")
     )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/49cfe2ec-b82a-4aad-8c2b-74af69036066"
+      (reference "#PWR0105") (unit 1) (value "+3V3") (footprint "")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/d87bc171-9086-47ad-99e8-b7a6f6ce63f6"
+      (reference "#PWR0106") (unit 1) (value "GND") (footprint "")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/4a61067f-7280-4dcb-93a6-2803424f8aad"
+      (reference "#PWR0107") (unit 1) (value "GND") (footprint "")
+    )
     (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/3dfadb67-a5f2-4640-89cd-0094bf3dae1f"
       (reference "#PWR0201") (unit 1) (value "GND") (footprint "")
     )
@@ -1801,6 +1810,33 @@
     )
     (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/5b5fbee2-2456-4e62-8e8f-75ee04a11e58"
       (reference "R205") (unit 1) (value "27") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/acab362f-1623-43e8-815d-b3d01f3837cf"
+      (reference "R206") (unit 1) (value "10k") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/8f970520-37c3-437c-9b08-9c10670b5e97"
+      (reference "R207") (unit 1) (value "240") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/f5b3af55-24a9-4155-bed2-2b230491c90c"
+      (reference "R208") (unit 1) (value "240") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/2cfa3009-f8f7-48c8-87ea-48b1a79a9267"
+      (reference "R209") (unit 1) (value "240") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/b40e90b3-adc5-4713-91fe-e199cef52507"
+      (reference "R210") (unit 1) (value "240") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/94e3a86c-c7e8-4f7c-a9c6-ffb10025f324"
+      (reference "R211") (unit 1) (value "240") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/bad1e2eb-ecda-46b4-a9e2-a0d4fa3f08a4"
+      (reference "R212") (unit 1) (value "240") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/3ca72ab4-ae20-4a37-80fb-c153271223ca"
+      (reference "R213") (unit 1) (value "240") (footprint "Resistor_SMD:R_0805_2012Metric")
+    )
+    (path "/8eaff73c-1ab6-4a5f-877b-8fab0b72eb72/bce70c52-b49f-4966-88c5-742b57c4e168"
+      (reference "R214") (unit 1) (value "240") (footprint "Resistor_SMD:R_0805_2012Metric")
     )
     (path "/623154dc-1575-4b27-b483-8c3196e0409b"
       (reference "U101") (unit 1) (value "Nokia_5110_LCD") (footprint "Nokia_5110-3310_LCD:Nokia_5110-3310_LCD")
