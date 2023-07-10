@@ -1,4 +1,4 @@
-(kicad_sch (version 20211123) (generator eeschema)
+(kicad_sch (version 20230121) (generator eeschema)
 
   (uuid 83ed868e-cc52-4e65-a0e3-8b11c6c941c9)
 
@@ -6,16 +6,16 @@
 
   (lib_symbols
     (symbol "KenwoodFox:CC1101" (in_bom yes) (on_board yes)
-      (property "Reference" "U" (id 0) (at -13.97 16.51 0)
+      (property "Reference" "U" (at -13.97 16.51 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Value" "CC1101" (id 1) (at 11.43 -20.32 0)
+      (property "Value" "CC1101" (at 11.43 -20.32 0)
         (effects (font (size 1.27 1.27)))
       )
-      (property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias" (id 2) (at -2.54 0 0)
+      (property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias" (at -2.54 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/cc1101.pdf" (id 3) (at -2.54 0 0)
+      (property "Datasheet" "https://www.ti.com/lit/ds/symlink/cc1101.pdf" (at -2.54 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
       (symbol "CC1101_0_0"
@@ -108,7 +108,7 @@
       )
       (symbol "CC1101_0_1"
         (rectangle (start -15.24 15.24) (end 15.24 -19.05)
-          (stroke (width 0) (type default) (color 0 0 0 0))
+          (stroke (width 0) (type default))
           (fill (type background))
         )
       )
@@ -117,18 +117,18 @@
 
 
   (symbol (lib_id "KenwoodFox:CC1101") (at 149.86 94.615 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 498c745d-b1e7-4d46-b828-d882f06dae4b)
-    (property "Reference" "U301" (id 0) (at 155.6894 115.57 0)
+    (property "Reference" "U301" (at 155.6894 115.57 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "CC1101" (id 1) (at 155.6894 118.11 0)
+    (property "Value" "CC1101" (at 155.6894 118.11 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias" (id 2) (at 147.32 94.615 0)
+    (property "Footprint" "Package_DFN_QFN:QFN-20-1EP_4x4mm_P0.5mm_EP2.5x2.5mm_ThermalVias" (at 147.32 94.615 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/cc1101.pdf" (id 3) (at 147.32 94.615 0)
+    (property "Datasheet" "https://www.ti.com/lit/ds/symlink/cc1101.pdf" (at 147.32 94.615 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 12312ed4-7bb3-4ab9-a12c-0f5a42177211))
@@ -152,5 +152,12 @@
     (pin "7" (uuid 1e1392fb-1069-431a-876c-57dc73bb8336))
     (pin "8" (uuid 25045530-cfe9-4bb7-b9da-5eb177599917))
     (pin "9" (uuid 159695e0-5e6d-4b7c-b97d-e43e3923bab0))
+    (instances
+      (project "KIT_Controller"
+        (path "/d2c0d012-a149-4c33-aec9-d1ae26c850e5/fc7e88bf-acda-4bb4-a9fe-032589e0a1e7"
+          (reference "U301") (unit 1)
+        )
+      )
+    )
   )
 )
