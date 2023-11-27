@@ -60,11 +60,17 @@ if username == "root":
     username = "github"
     host = "github"
 
-# # Colors!
-# revision = revision.replace("dirty", "\x1B[31mdirty\x1B[0m")
-# host = "\x1B[34m" + host + "\x1B[0m"
-# username = "\x1B[34m" + username + "\x1B[0m"
-
 print(f"-DREVISION='\"{revision}\"'")
 print(f"-DHOST='\"{host}\"'")
 print(f"-DUSER='\"{username}\"'")
+
+
+# These come from the platform defs
+print(f"-D PICO_STDIO_USB")  # Both
+print(f"-D PICO_STDIO_UART")  # Baremetal
+print(f"-D USE_FREERTOS")  # Both
+print(f"-D USE_VFS")
+print(f"-D USE_LFS")  # Both
+print(
+    f"-D FATFS_SPI_BRG=100000"
+)  # Compilation fix, SPI frqeuency for FAT SD card (goes unused here)

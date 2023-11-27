@@ -4,10 +4,17 @@
  * @brief Source code for kw1fox-3
  */
 
-// Libs
+// Pico Libs
 #include <stdio.h>
 #include <stdbool.h>
 #include "pico/stdlib.h"
+
+// FreeRTOS
+#include "FreeRTOS.h"
+#include "task.h"
+
+// VFS
+#include <VFS.h>
 
 // Headers
 #include "boardPins.h"
