@@ -1,3 +1,6 @@
-[submodule "Hardware/LC-Mainboard/Libraries/kenwoodfox-kicad-libraries"]
-	path = Hardware/LC-Mainboard/Libraries/kenwoodfox-kicad-libraries
+[submodule "Hardware/KIT_Controller/Libraries/kenwoodfox-kicad-libraries"]
+	path = Hardware/KIT_Controller/Libraries/kenwoodfox-kicad-libraries
 	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries.git
+[submodule "Hardware/KIT_Controller/Libraries/sgreg-kicad-libraries"]
+	path = Hardware/KIT_Controller/Libraries/sgreg-kicad-libraries
+	url = https://github.com/Kitsune-Robotics/sgreg-kicad-libraries.git

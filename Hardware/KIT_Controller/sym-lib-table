@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name "KenwoodFox")(type "KiCad")(uri "${KIPRJMOD}/Libraries/kenwoodfox-kicad-libraries/libraries/KenwoodFox.kicad_sym")(options "")(descr ""))
+  (lib (name "nokia_5110-3310_lcd")(type "KiCad")(uri "${KIPRJMOD}/Libraries/sgreg-kicad-libraries/symbols/nokia_5110-3310_lcd.kicad_sym")(options "")(descr ""))
 )
