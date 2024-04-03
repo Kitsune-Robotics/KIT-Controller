@@ -561,7 +561,7 @@
 		(at -47.5 -14.5 90)
 		(descr "KiCad Logo")
 		(tags "Logo KiCad")
-		(property "Reference" "REF**"
+		(property "Reference" "LOGO5"
 			(at 0 -5.08 90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -1337,6 +1337,7 @@
 		(property "Reference" "LOGO1"
 			(at 0 0 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "458e4918-a150-41d3-b92f-3c7c92c6fddc")
 			(effects
 				(font
@@ -2232,7 +2233,7 @@
 		(descr "Soldered wire connection with feed through strain relief, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm strain-relief")
 		(property "Reference" "J1"
-			(at 2.3 -2.25 270)
+			(at 2.3 -2.25 -90)
 			(layer "F.SilkS")
 			(uuid "a1bd9500-bcbd-45b4-92a1-a6acfff57804")
 			(effects
@@ -2243,7 +2244,7 @@
 			)
 		)
 		(property "Value" "CAN"
-			(at 2.3 15.1 270)
+			(at 2.3 15.1 -90)
 			(layer "F.Fab")
 			(uuid "464e4e70-37a6-48c2-848d-02b7a80dee9c")
 			(effects
@@ -2579,7 +2580,7 @@
 			(uuid "d5fa6751-09ba-47e4-805e-780a9fb6e28e")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 2.3 6.3 360)
+			(at 2.3 6.3 0)
 			(layer "F.Fab")
 			(uuid "e9a3ca05-4d2f-4e52-a841-e2aa54cabc9b")
 			(effects
@@ -3617,7 +3618,7 @@
 		(at -47.5 -38.5 90)
 		(descr "Open Source Hardware Symbol")
 		(tags "Logo Symbol OSHW")
-		(property "Reference" "REF**"
+		(property "Reference" "LOGO3"
 			(at 0 0 90)
 			(layer "F.SilkS")
 			(hide yes)
