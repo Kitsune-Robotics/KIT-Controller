@@ -1334,9 +1334,9 @@
 		(layer "F.Cu")
 		(uuid "4c475b02-4275-4260-81d6-9274e961e0a8")
 		(at 90.5 72 90)
-		(property "Reference" "G***"
+		(property "Reference" "LOGO1"
 			(at 0 0 90)
-			(layer "F.SilkS")
+			(layer "F.Fab")
 			(uuid "458e4918-a150-41d3-b92f-3c7c92c6fddc")
 			(effects
 				(font
