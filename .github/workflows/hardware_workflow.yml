@@ -19,6 +19,7 @@ jobs:
       matrix:
         variant:
           - KIT_Controller
+          - BackPlane
 
     steps:
       - uses: actions/checkout@v3
