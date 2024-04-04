@@ -137,7 +137,7 @@
 			)
 		)
 		(property "Value" "CON31"
-			(at 1 -1.7 360)
+			(at 1 -1.7 0)
 			(layer "F.Fab")
 			(uuid "5c782fec-ead7-44aa-8d5a-eea0e47f84c4")
 			(effects
@@ -279,7 +279,7 @@
 			(uuid "b3fc6e2c-41ad-462d-b576-128ec2d74654")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 360)
+			(at 1.1 2.1 0)
 			(layer "F.Fab")
 			(uuid "0dd16cbd-c0ed-4121-98cb-7d6dccc4ef7b")
 			(effects
@@ -330,7 +330,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP11"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "101d914f-30da-4cbf-8e3c-fa176f69c4fb")
@@ -342,7 +342,7 @@
 			)
 		)
 		(property "Value" "I2C_SCL"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "1f8dbd42-1b96-4ea8-bb49-1e8f983bd1cf")
 			(effects
@@ -484,7 +484,7 @@
 			(uuid "21013e71-51ea-4510-87b5-68ef4cf7d1c9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "797fdb8b-4b99-4aa2-b3ca-d37b7c8b4a97")
 			(effects
@@ -1223,7 +1223,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP23"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3602dc1a-2da4-4e0a-9b93-f30868ec119d")
@@ -1235,7 +1235,7 @@
 			)
 		)
 		(property "Value" "UNUSED5"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "6c3dd1c7-243b-449e-afdb-912ae27b231d")
 			(effects
@@ -1377,7 +1377,7 @@
 			(uuid "514b293e-3fd8-426f-b941-3e192b2e4078")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "a53cc466-09f4-4298-80fd-d9ac3248c591")
 			(effects
@@ -1428,7 +1428,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP18"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9680fffb-fe27-4f22-a42c-4470b35c43a6")
@@ -1440,7 +1440,7 @@
 			)
 		)
 		(property "Value" "CARD_EN3"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "6bdc0f43-4a82-429f-ae23-996f75809465")
 			(effects
@@ -1582,7 +1582,7 @@
 			(uuid "2290aca8-df28-48ee-abdb-b9134f2c0ebf")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "fa4e8373-2e00-46cc-99c1-d57ce50f21ce")
 			(effects
@@ -1844,7 +1844,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP30"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "99007b77-aaa6-49e7-985f-769f44b8badf")
@@ -1856,7 +1856,7 @@
 			)
 		)
 		(property "Value" "GPIO2"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "2afcb486-8178-4105-a3f3-356cff6165cb")
 			(effects
@@ -1998,7 +1998,7 @@
 			(uuid "bda30720-929c-4915-b274-c3ea75489191")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "ffb9e071-2c7d-4bfd-bf03-ddf1ef2407b2")
 			(effects
@@ -2061,7 +2061,7 @@
 			)
 		)
 		(property "Value" "CON12"
-			(at 1 -1.7 360)
+			(at 1 -1.7 0)
 			(layer "F.Fab")
 			(uuid "597e966d-d8bb-4bb3-9a48-fb5fefae38df")
 			(effects
@@ -2203,7 +2203,7 @@
 			(uuid "2bc9ffea-2f96-4aac-9114-8396591e9fac")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 360)
+			(at 1.1 2.1 0)
 			(layer "F.Fab")
 			(uuid "f3cf39c2-5f68-4d8c-9624-585adccf7ba3")
 			(effects
@@ -2254,7 +2254,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP10"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "3ebb99bf-bc44-4886-bec0-a8bb97754f13")
@@ -2266,7 +2266,7 @@
 			)
 		)
 		(property "Value" "SPI_SDA3"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "fa623a66-faad-417a-8be1-4913b2f67500")
 			(effects
@@ -2408,7 +2408,7 @@
 			(uuid "bbc19b9d-a646-48f5-970c-111ed7823f2a")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "25ff0150-6142-4828-b2f9-61d461c5bad2")
 			(effects
@@ -2459,7 +2459,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP20"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "251a5f0c-3a45-4dc2-88a5-7fb92a2d2948")
@@ -2471,7 +2471,7 @@
 			)
 		)
 		(property "Value" "UNUSED4"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "b1da5637-6ebe-4184-bad9-9892c023f91f")
 			(effects
@@ -2613,7 +2613,7 @@
 			(uuid "9ae1cb03-505f-4aa2-be82-cb75722cfaa1")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "6656ee33-ea52-45b7-9ca4-177f6911c6d1")
 			(effects
@@ -2676,7 +2676,7 @@
 			)
 		)
 		(property "Value" "CON11"
-			(at 1 -1.7 360)
+			(at 1 -1.7 0)
 			(layer "F.Fab")
 			(uuid "6168ef4b-3797-43fe-960e-2bf57413c9d2")
 			(effects
@@ -2818,7 +2818,7 @@
 			(uuid "25881958-0b7b-4857-88f2-b26908f8c835")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 360)
+			(at 1.1 2.1 0)
 			(layer "F.Fab")
 			(uuid "1f81f42b-026e-46c9-88b0-8ee0300f6c57")
 			(effects
@@ -2868,8 +2868,8 @@
 		(at -30 -96.24 90)
 		(descr "Open Source Hardware Symbol")
 		(tags "Logo Symbol OSHW")
-		(property "Reference" "REF**"
-			(at 0 0 270)
+		(property "Reference" "LOGO3"
+			(at 0 0 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b4c7a741-1035-431b-86af-4a614d098052")
@@ -2881,7 +2881,7 @@
 			)
 		)
 		(property "Value" "OSHW-Logo2_14.6x12mm_SilkScreen"
-			(at 0.75 0 270)
+			(at 0.75 0 -90)
 			(layer "F.Fab")
 			(hide yes)
 			(uuid "76838646-c4b6-47b1-9c5b-3f2fa5b9bf06")
@@ -9385,7 +9385,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP25"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7abe84f7-9b63-49bb-bb21-ce5f5d5cb77f")
@@ -9397,7 +9397,7 @@
 			)
 		)
 		(property "Value" "CANH"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "c026e113-7c16-4609-9042-edfbbd2a8ddb")
 			(effects
@@ -9539,7 +9539,7 @@
 			(uuid "ed971a47-bcaa-4cf1-a62a-3d1604cf4114")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "8a304ada-67a5-4379-a77f-b925729be9c1")
 			(effects
@@ -9590,7 +9590,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP15"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b37bb577-a984-405e-acdf-dc1468655ba5")
@@ -9602,7 +9602,7 @@
 			)
 		)
 		(property "Value" "CARD_EN"
-			(at 1.04 -2 270)
+			(at 1.04 -2 -90)
 			(layer "F.Fab")
 			(uuid "86dfcc59-7ae0-4330-b983-225c871fb504")
 			(effects
@@ -9744,7 +9744,7 @@
 			(uuid "a2491064-1f08-4b69-a32d-d930bf61bce3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "3a7ee34d-aa80-4e2c-88b6-919faa9a205f")
 			(effects
@@ -10000,7 +10000,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP6"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5e1a5b99-e7b3-4a35-b098-e541c97b1f53")
@@ -10012,7 +10012,7 @@
 			)
 		)
 		(property "Value" "CARD_SEL4"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "02672610-017e-4500-b8d1-763ba20a960d")
 			(effects
@@ -10154,7 +10154,7 @@
 			(uuid "466fd6fa-32f8-4062-b6f3-3efabffeb6d6")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "e9676aeb-7592-4bda-9cc9-362b5808c7b8")
 			(effects
@@ -11703,7 +11703,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP29"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4058cd53-9c47-4056-9ae8-471be2727ae7")
@@ -11715,7 +11715,7 @@
 			)
 		)
 		(property "Value" "GPIO3"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "f608cd88-4bd5-4956-a484-729dc8517d9e")
 			(effects
@@ -11857,7 +11857,7 @@
 			(uuid "3a0e995c-09d3-492d-88f5-6f24974e6d7c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "c0857d35-c4cb-4b65-a9cf-992dc53593f3")
 			(effects
@@ -11908,7 +11908,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP17"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "4f3ea59b-4734-469a-a497-25d1cc5bcb65")
@@ -11920,7 +11920,7 @@
 			)
 		)
 		(property "Value" "CARD_EN4"
-			(at 1 -2 270)
+			(at 1 -2 -90)
 			(layer "F.Fab")
 			(uuid "5fb37f48-12f0-4bff-a2dd-371884516ad2")
 			(effects
@@ -12062,7 +12062,7 @@
 			(uuid "5651278e-6e68-4264-bb5e-ec31488e41d9")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "f483e296-1f52-4e91-9382-d82972e80915")
 			(effects
@@ -12318,7 +12318,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP27"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e4bbc1cb-e685-4a14-9ad0-c5e9cd490999")
@@ -12330,7 +12330,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "ae9e7a6a-729e-46d9-8c56-9eca49bb9616")
 			(effects
@@ -12472,7 +12472,7 @@
 			(uuid "cb4f6814-debd-452c-8521-10526f06fda5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "bfab87e0-589c-4818-80f5-46c80f83b237")
 			(effects
@@ -12523,7 +12523,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP22"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "ad7b2c8d-1d94-4f04-a90a-bdd9a9f2f47c")
@@ -12535,7 +12535,7 @@
 			)
 		)
 		(property "Value" "UNUSED3"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "f700496d-5528-4fdd-9ac1-8f5a9b1966f5")
 			(effects
@@ -12677,7 +12677,7 @@
 			(uuid "0ad2bf39-9d34-42b6-8f94-a4711a78267f")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "2d90d354-50ec-4555-ae7a-af4231072a87")
 			(effects
@@ -12740,7 +12740,7 @@
 			)
 		)
 		(property "Value" "CON21"
-			(at 1 -1.7 360)
+			(at 1 -1.7 0)
 			(layer "F.Fab")
 			(uuid "a7d37dd8-710f-4ae6-b32c-d7c483c518c3")
 			(effects
@@ -12882,7 +12882,7 @@
 			(uuid "d0156b35-4346-41c7-93bb-76c1c7b11122")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 360)
+			(at 1.1 2.1 0)
 			(layer "F.Fab")
 			(uuid "a0c354d9-53d2-4c59-9ba3-d3745778b2fb")
 			(effects
@@ -12933,7 +12933,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP19"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "7b9bb0f2-a1c0-4074-b12a-1eb0ceb3bfe6")
@@ -12945,7 +12945,7 @@
 			)
 		)
 		(property "Value" "UNUSED2"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "9f12c062-6e58-449f-a17d-2aad9249cdd3")
 			(effects
@@ -13087,7 +13087,7 @@
 			(uuid "6b3eb8c1-2dff-4e42-b3df-ff4e7b3a0e7c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "3e53b3ea-ce94-493d-b57d-533cabd4c932")
 			(effects
@@ -13138,7 +13138,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP8"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "95496724-e754-4174-9943-ac7db2411183")
@@ -13150,7 +13150,7 @@
 			)
 		)
 		(property "Value" "SPI_SDA2"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "2a9894b6-efba-4b8e-9038-c3a69fae0fd4")
 			(effects
@@ -13292,7 +13292,7 @@
 			(uuid "a4bbadab-fdb2-4f1d-b068-0b93c1d1e285")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "53a6e09b-fafd-4c38-b41e-5bbafecd2eb5")
 			(effects
@@ -13340,8 +13340,8 @@
 		(layer "F.Cu")
 		(uuid "6e3f6d07-a8f9-453e-bff7-68270f29c7cd")
 		(at -30 -65.76 90)
-		(property "Reference" "G***"
-			(at 0 0 270)
+		(property "Reference" "LOGO1"
+			(at 0 0 -90)
 			(layer "F.SilkS")
 			(uuid "04cc4640-e93f-49a6-bc7a-1d13c9eb8a2f")
 			(effects
@@ -13352,7 +13352,7 @@
 			)
 		)
 		(property "Value" "LOGO"
-			(at 0.75 0 270)
+			(at 0.75 0 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "9742c619-f1a7-4afa-b2e2-5dd47cb94c48")
@@ -13627,7 +13627,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP12"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0f90f01d-1275-4a83-a811-33342ad9d943")
@@ -13639,7 +13639,7 @@
 			)
 		)
 		(property "Value" "I2C_SDA"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "358491d3-7927-4d55-8744-799646ed9d9e")
 			(effects
@@ -13781,7 +13781,7 @@
 			(uuid "6850e009-ceae-4659-84e5-f88a9c4eb152")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "d44a08b3-72da-4fed-9916-30529d1a1bc4")
 			(effects
@@ -14037,7 +14037,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP9"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "797325c6-7fdd-40fd-a476-8fd4f0b439cc")
@@ -14049,7 +14049,7 @@
 			)
 		)
 		(property "Value" "SPI_SDA1/SDI"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "ef01adfb-083f-474d-9516-38d9d4694f22")
 			(effects
@@ -14191,7 +14191,7 @@
 			(uuid "ab3da8bd-d447-4181-8b5a-5f637910cd49")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "9f31e73d-d97c-4f26-986f-4baa99cc0993")
 			(effects
@@ -14242,7 +14242,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP24"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "e9a0aafc-c57e-4b43-b943-2364936d5ce9")
@@ -14254,7 +14254,7 @@
 			)
 		)
 		(property "Value" "CANL"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "6861a0e9-28b9-4554-93e7-2bfe9beafa69")
 			(effects
@@ -14396,7 +14396,7 @@
 			(uuid "da5c5928-d0ce-4847-b23d-dc125b289962")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "3d2ab68e-c4c2-437a-9ffa-3a35963b5975")
 			(effects
@@ -14447,7 +14447,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP3"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "535c5418-43be-4f45-8351-2fb66242f13b")
@@ -14459,7 +14459,7 @@
 			)
 		)
 		(property "Value" "CARD_SEL"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "17563468-8da6-454e-b6c4-f233f96d0108")
 			(effects
@@ -14601,7 +14601,7 @@
 			(uuid "64766647-5461-4092-a812-fb78d8acdd5d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "fa792ed2-d221-43c2-a957-46414ab3b451")
 			(effects
@@ -14652,7 +14652,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP26"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "d59df479-8342-4638-a2d4-59e740d90e3b")
@@ -14664,7 +14664,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "68cab091-f852-4053-b5db-38844ed46481")
 			(effects
@@ -14806,7 +14806,7 @@
 			(uuid "c43333bd-f590-444a-b095-83ff5c2b6f7d")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "30991fcd-9bdd-4367-9790-00939501cfe0")
 			(effects
@@ -14857,7 +14857,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP16"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0cd16a3f-412c-4729-99ae-6c47c3c53252")
@@ -14869,7 +14869,7 @@
 			)
 		)
 		(property "Value" "CARD_EN2"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "890b6a49-ddb6-4e6a-aa5d-c936bfe5bd31")
 			(effects
@@ -15011,7 +15011,7 @@
 			(uuid "6dfb2f51-3532-4c45-ae4e-6e26299a191c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "9b6b00d6-e2ad-443a-bcce-9f4dab5119a7")
 			(effects
@@ -15245,7 +15245,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP28"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "889e53eb-b9d9-43a5-983b-6f856442f7e8")
@@ -15257,7 +15257,7 @@
 			)
 		)
 		(property "Value" "GPIO1"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "9e12c4d6-1d9b-42c4-b423-52d0a22cabf6")
 			(effects
@@ -15399,7 +15399,7 @@
 			(uuid "92b4f998-ab4e-47bb-8700-7c2a3a5bfe83")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "ab8e90af-de0f-4e82-9b34-275f7c7ad177")
 			(effects
@@ -15450,7 +15450,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP13"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "0d626143-4491-4e36-8fdd-348406bc40be")
@@ -15462,7 +15462,7 @@
 			)
 		)
 		(property "Value" "SPI_SDA4"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "7e58cb13-9bd7-4096-8b64-52f82f58d98a")
 			(effects
@@ -15604,7 +15604,7 @@
 			(uuid "b2af5d7d-05da-4b0d-81dc-daebd710cd86")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "4d2c95f9-f006-42db-b369-75ab24fff937")
 			(effects
@@ -15655,7 +15655,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP5"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "6b590bd9-afa2-4d3f-bc5d-780b959f3d71")
@@ -15667,7 +15667,7 @@
 			)
 		)
 		(property "Value" "CARD_SEL3"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "b771ff34-3c67-48ad-9e15-2a82b92c8eaa")
 			(effects
@@ -15809,7 +15809,7 @@
 			(uuid "75ce8105-256e-48d4-9802-ac12971caa9c")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "105418bd-645c-471d-af49-a6143d82957e")
 			(effects
@@ -15857,7 +15857,7 @@
 		(layer "F.Cu")
 		(uuid "9d4f6937-87b8-4ddb-88f9-f154c85e93c1")
 		(at -30 -81 90)
-		(property "Reference" "G***"
+		(property "Reference" "LOGO2"
 			(at 0 0 -90)
 			(layer "F.SilkS")
 			(hide yes)
@@ -16097,7 +16097,7 @@
 			)
 		)
 		(property "Value" "CON22"
-			(at 1 -1.7 360)
+			(at 1 -1.7 0)
 			(layer "F.Fab")
 			(uuid "b7efb954-fc00-48cc-a28d-d117f4499dbb")
 			(effects
@@ -16239,7 +16239,7 @@
 			(uuid "8079b96a-d4fa-4714-9e04-ca9016aaf195")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 360)
+			(at 1.1 2.1 0)
 			(layer "F.Fab")
 			(uuid "ec7f9091-89c6-4ff4-beca-003b5644cb19")
 			(effects
@@ -16302,7 +16302,7 @@
 			)
 		)
 		(property "Value" "CON32"
-			(at 1 -1.7 360)
+			(at 1 -1.7 0)
 			(layer "F.Fab")
 			(uuid "f15e9db5-01cf-4b9c-b6fd-9bd18c00a228")
 			(effects
@@ -16444,7 +16444,7 @@
 			(uuid "0616ee14-a080-4385-8797-23f1db115dfb")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 360)
+			(at 1.1 2.1 0)
 			(layer "F.Fab")
 			(uuid "266decf1-df0b-4a9c-85cf-c7aa0489751e")
 			(effects
@@ -16495,7 +16495,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP37"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "5ed25f77-8737-415e-8564-2c44f837915b")
@@ -16507,7 +16507,7 @@
 			)
 		)
 		(property "Value" "12v"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "c9d6c586-3cd8-4050-aa0c-4e446a99355c")
 			(effects
@@ -16649,7 +16649,7 @@
 			(uuid "40211816-af54-45fd-bef6-616831b72fb3")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "d54a93f8-271a-4c97-b1eb-4dcf3e37db67")
 			(effects
@@ -16700,7 +16700,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP7"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "1eaa6f24-0705-47e9-a6d8-d07ae3539627")
@@ -16712,7 +16712,7 @@
 			)
 		)
 		(property "Value" "SPI_CLK"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "c70b10a4-42ac-4802-953a-2396aaff7363")
 			(effects
@@ -16854,7 +16854,7 @@
 			(uuid "3e64f126-233a-4c02-b3ec-2628932bdc70")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "fe2270fd-b8b7-425c-b9dd-505044083feb")
 			(effects
@@ -17433,7 +17433,7 @@
 			)
 		)
 		(property "Value" "330"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "58338b47-ee37-4375-9228-56b6da56f4a1")
 			(effects
@@ -17585,7 +17585,7 @@
 			(uuid "9c402748-c7b3-4fe5-9096-89e020d1ca42")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 0 0 360)
+			(at 0 0 0)
 			(layer "F.Fab")
 			(uuid "e5256a01-fd81-4dbf-b07a-d68343a6fb87")
 			(effects
@@ -18281,7 +18281,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP14"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "85340087-9e6e-47c2-ad55-eb223c5af979")
@@ -18293,7 +18293,7 @@
 			)
 		)
 		(property "Value" "SPI_SDO"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "2c5cf41f-ab31-40b1-9eb6-76531028982d")
 			(effects
@@ -18435,7 +18435,7 @@
 			(uuid "8593162e-5692-4bf0-9be3-d9665e4721d5")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "fb350c1e-baa0-4532-8f2b-a77aea79c4fc")
 			(effects
@@ -18486,7 +18486,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP4"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "63c56dec-c24a-4caa-889e-181b7b83074e")
@@ -18498,7 +18498,7 @@
 			)
 		)
 		(property "Value" "CARD_SEL2"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "eba83407-0d47-4396-ab95-077b443df256")
 			(effects
@@ -18640,7 +18640,7 @@
 			(uuid "0ff41525-bed4-4b3c-a043-2d796921fd39")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "5f17e476-f0c4-4f02-839e-93381d50e796")
 			(effects
@@ -18691,7 +18691,7 @@
 		(descr "wire loop as test point, pitch 2.54mm, hole diameter 1.0mm, wire diameter 0.8mm")
 		(tags "test point wire loop")
 		(property "Reference" "TP21"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "86d5d6b4-d353-4dc2-847b-6c9964d5fb05")
@@ -18703,7 +18703,7 @@
 			)
 		)
 		(property "Value" "UNUSED1"
-			(at 1 -1.7 270)
+			(at 1 -1.7 -90)
 			(layer "F.Fab")
 			(uuid "61abaeea-353f-4383-a81a-4533076ac893")
 			(effects
@@ -18845,7 +18845,7 @@
 			(uuid "3420b222-5004-4488-b7ae-dcd425a12e31")
 		)
 		(fp_text user "${REFERENCE}"
-			(at 1.1 2.1 270)
+			(at 1.1 2.1 -90)
 			(layer "F.Fab")
 			(uuid "853a3378-76e1-4338-8e25-508f4bf7f4b0")
 			(effects
@@ -19296,6 +19296,19 @@
 				(bold yes)
 			)
 			(justify top)
+		)
+	)
+	(gr_text "${FULL_REVISION}"
+		(at 23 -0.5 0)
+		(layer "F.SilkS")
+		(uuid "6077dd30-c4f4-4342-a163-56ac9d797fd3")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.22)
+				(bold yes)
+			)
+			(justify bottom)
 		)
 	)
 	(gr_text "CARD_SEL"
