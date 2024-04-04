@@ -7,3 +7,6 @@
 [submodule "Hardware/BackPlane/Libraries/kenwoodfox-kicad-libraries"]
 	path = Hardware/BackPlane/Libraries/kenwoodfox-kicad-libraries
 	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries.git
+[submodule "Hardware/Dev_Card/Libraries/kenwoodfox-kicad-libraries"]
+	path = Hardware/Dev_Card/Libraries/kenwoodfox-kicad-libraries
+	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries.git

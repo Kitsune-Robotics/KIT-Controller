@@ -20,6 +20,7 @@ jobs:
         variant:
           - KIT_Controller
           - BackPlane
+          - Dev_Card
 
     steps:
       - uses: actions/checkout@v3
