@@ -64,6 +64,8 @@ jobs:
       matrix:
         variant:
           - KIT_Controller
+          - BackPlane
+          - Dev_Card
 
     steps:
       # Download artifacts
@@ -102,7 +104,9 @@ jobs:
     strategy:
       matrix:
         variant:
-          - Buisness Card
+          - KIT_Controller
+          - BackPlane
+          - Dev_Card
 
     steps:
       # Be in our repo
