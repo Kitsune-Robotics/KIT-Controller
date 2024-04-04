@@ -13341,8 +13341,9 @@
 		(uuid "6e3f6d07-a8f9-453e-bff7-68270f29c7cd")
 		(at -30 -65.76 90)
 		(property "Reference" "LOGO1"
-			(at 0 0 -90)
+			(at 0 0 270)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "04cc4640-e93f-49a6-bc7a-1d13c9eb8a2f")
 			(effects
 				(font
