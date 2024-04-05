@@ -15,6 +15,12 @@ Migrated from https://kitsunehosting.net/gitea/Kenwood/lewis-crawler
 git clone https://github.com/Kitsune-Robotics/KIT-Controller.git --recurse-submodules
 ```
 
+You will *need* the submodules as all of the boards in `Hardware` have several library dependencies.
+
+`Hardware/BackPlane` Contains the backplane for the system, the backplane connects all other cards together.
+`Hardware/KIT_Controller` Is the main processing unit of the system, the core computer where this code (will eventually) live
+`Hardware/Dev_Card` Is a development tool, made to be slotted into any slot and connected via probes, solder jumpers and wires to aid in developing/debugging
+
 
 # Parts
 
