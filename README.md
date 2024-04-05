@@ -7,6 +7,15 @@ Hardware for the KIT Controller
 Migrated from https://kitsunehosting.net/gitea/Kenwood/lewis-crawler
 
 
+# Getting Started
+
+## Clone this repo
+
+```shell
+git clone https://github.com/Kitsune-Robotics/KIT-Controller.git --recurse-submodules
+```
+
+
 # Parts
 
 The kit controller and its other boards use the Sullins [EBM15DSEH](https://www.digikey.com/en/products/detail/sullins-connector-solutions/EBM15DSEH/927297) to connect to the backplane.
