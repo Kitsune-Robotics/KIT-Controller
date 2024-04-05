@@ -43,4 +43,4 @@ Its a little expensive, in the future the [WingTAT ED30MEBGFBK ](https://www.lcs
 
 ## Project Layout
 
-If you want to use this project template for yourself, you can find it [here!](https://{{cookiecutter.gitprovider}}.com/KenwoodFox/Project-Template)
+If you want to use this project template for yourself, you can find it [here!](https://github.com/KenwoodFox/Project-Template)
