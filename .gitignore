@@ -4,6 +4,7 @@ __pycache__
 # CAD
 *.stl
 *.FCStd1
+*.FCBak
 
 # Artifacts
 *.png
