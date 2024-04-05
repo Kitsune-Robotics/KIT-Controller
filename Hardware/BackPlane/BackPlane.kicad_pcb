@@ -3553,6 +3553,7 @@
 		(property "Reference" "J3"
 			(at 2.3 -2.25 90)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "362067dc-cf7a-4102-a5bf-9524af153ce2")
 			(effects
 				(font
@@ -7725,6 +7726,7 @@
 			(at 10.25 4.3 0)
 			(unlocked yes)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "e33c02e0-e3e4-4d5c-951e-60782e6d17fb")
 			(effects
 				(font
@@ -8613,6 +8615,19 @@
 				(bold yes)
 			)
 			(justify top mirror)
+		)
+	)
+	(gr_text "FUSE"
+		(at -82 -5 0)
+		(layer "B.SilkS")
+		(uuid "9f644520-71ee-4a3a-880e-b8c6b55fa8d4")
+		(effects
+			(font
+				(size 1.5 1.5)
+				(thickness 0.3)
+				(bold yes)
+			)
+			(justify mirror)
 		)
 	)
 	(gr_text "GND"
