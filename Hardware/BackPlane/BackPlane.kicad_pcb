@@ -176,7 +176,7 @@
 		(layer "F.Cu")
 		(uuid "0e811993-2b12-4fa9-b0b3-c4cac82b6d4f")
 		(at -60 0 90)
-		(property "Reference" "REF**"
+		(property "Reference" "BLANK1"
 			(at -40.25 -5 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -279,7 +279,7 @@
 		(layer "F.Cu")
 		(uuid "14107ee8-a413-40c8-8872-0048c5b9d417")
 		(at 40 0 90)
-		(property "Reference" "REF**"
+		(property "Reference" "BLANK2"
 			(at -40.25 -5 90)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2335,7 +2335,7 @@
 		(descr "Soldered wire connection with feed through strain relief, for 3 times 0.25 mm² wires, reinforced insulation, conductor diameter 0.65mm, outer diameter 2mm, size source Multi-Contact FLEXI-2V 0.25 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.25sqmm strain-relief")
 		(property "Reference" "J102"
-			(at 4.5 -2.2 270)
+			(at 4.5 -2.2 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "b6ce7c6f-1238-45c7-88c7-4b40fdff574a")
@@ -3023,7 +3023,7 @@
 		(descr "Soldered wire connection with feed through strain relief, for 2 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm strain-relief")
 		(property "Reference" "J1"
-			(at 2.3 -2.25 270)
+			(at 2.3 -2.25 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "a1bd9500-bcbd-45b4-92a1-a6acfff57804")
@@ -3964,7 +3964,7 @@
 		(descr "Soldered wire connection with feed through strain relief, for 5 times 0.5 mm² wires, basic insulation, conductor diameter 0.9mm, outer diameter 2.1mm, size source Multi-Contact FLEXI-E 0.5 (https://ec.staubli.com/AcroFiles/Catalogues/TM_Cab-Main-11014119_(en)_hi.pdf), bend radius 3 times outer diameter, generated with kicad-footprint-generator")
 		(tags "connector wire 0.5sqmm strain-relief")
 		(property "Reference" "J104"
-			(at 9.2 -2.25 270)
+			(at 9.2 -2.25 -90)
 			(layer "F.SilkS")
 			(hide yes)
 			(uuid "6b48c776-8b10-439f-9362-a32fb265a6a4")
