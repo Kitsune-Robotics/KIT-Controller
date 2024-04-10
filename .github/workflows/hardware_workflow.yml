@@ -18,7 +18,9 @@ jobs:
     strategy:
       matrix:
         variant:
-          - KIT_Controller
+          # - KIT_Controller
+          - BackPlane
+          - Dev_Card
 
     steps:
       - uses: actions/checkout@v3
@@ -61,7 +63,9 @@ jobs:
     strategy:
       matrix:
         variant:
-          - KIT_Controller
+          # - KIT_Controller
+          - BackPlane
+          - Dev_Card
 
     steps:
       # Download artifacts
@@ -100,7 +104,9 @@ jobs:
     strategy:
       matrix:
         variant:
-          - Buisness Card
+          # - KIT_Controller
+          - BackPlane
+          - Dev_Card
 
     steps:
       # Be in our repo
