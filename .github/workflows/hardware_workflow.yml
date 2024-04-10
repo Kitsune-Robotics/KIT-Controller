@@ -18,7 +18,7 @@ jobs:
     strategy:
       matrix:
         variant:
-          # - KIT_Controller
+          - KIT_Controller
           - BackPlane
           - Dev_Card
 
@@ -63,7 +63,7 @@ jobs:
     strategy:
       matrix:
         variant:
-          # - KIT_Controller
+          - KIT_Controller
           - BackPlane
           - Dev_Card
 
@@ -104,7 +104,7 @@ jobs:
     strategy:
       matrix:
         variant:
-          # - KIT_Controller
+          - KIT_Controller
           - BackPlane
           - Dev_Card
 
