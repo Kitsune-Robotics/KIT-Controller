@@ -1,4 +1,23 @@
-# rp2040-freertos-template
-This is a template project for developing FreeRTOS based applications on Raspberry Pi RP2040 based boards. This template uses the "official" RP2040 port from the Raspberry Pi Foundation. My previous repo used the generic Cortex M0 port so this one corrects that. Previous Repo retained as tutorials rely on it. 
+# VENTURE Firmware
 
-Unmodified, this project will spawn a single task to rapidly blink the LED on and off.
+## Building
+
+It was easier for me to use cmake at the beginning, but if possible, moving to PIO would be nice in the future.
+
+```shell
+mkdir build && cd build
+cmake ../
+make
+```
+
+
+## Flashing
+
+Idk yet
+
+
+## Credits
+
+This template/structure comes from the repo https://github.com/LearnEmbeddedSystems/rp2040-freertos-template
+
+And I learned a lot from his youtube series, so please check it out! https://youtu.be/2cDpGoCyrHQ
