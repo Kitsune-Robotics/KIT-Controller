@@ -4,13 +4,13 @@ on:
   push:
     branches:
       - "main"
-    tags:
-      - "*"
-    paths:
-      - ".github/**"
-  pull_request:
-    paths:
-      - "Hardware/**"
+  #   tags:
+  #     - "*"
+  #   paths:
+  #     - ".github/**"
+  # pull_request:
+  #   paths:
+  #     - "Hardware/**"
 
 jobs:
   KiCad_Hardware:

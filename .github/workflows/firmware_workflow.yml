@@ -27,6 +27,9 @@ jobs:
       - uses: carlosperate/arm-none-eabi-gcc-action@v1
         name: Install the GCC ARM compiler
 
+      - run: export PICO_SDK_FETCH_FROM_GIT=true
+        name: Allow getting PICO sdk from git
+
       - uses: threeal/cmake-action@main
         name: Configure and Build Project
         with:
