@@ -7,10 +7,10 @@ on:
     tags:
       - "*"
     paths:
-      - ".github/**"
+      - ".github/"
   pull_request:
     paths:
-      - "Firmware/**"
+      - "Firmware/"
 
 jobs:
   cmake:
@@ -29,3 +29,6 @@ jobs:
 
       - uses: threeal/cmake-action@main
         name: Configure and Build Project
+        with:
+          source-dir: Firmware
+          build-dir: Firmware/build
