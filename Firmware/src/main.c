@@ -19,12 +19,15 @@ void led_task()
 
 int main()
 {
+    // From pico SDK, init all
     stdio_init_all();
 
+    // FreeRTOS Create tasks
     xTaskCreate(led_task, "LED_Task", 256, NULL, 1, NULL);
     vTaskStartScheduler();
 
-    while (1)
+    while (true)
     {
+        // Main task can never exit
     };
 }
