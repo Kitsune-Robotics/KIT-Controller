@@ -7,10 +7,10 @@ on:
     tags:
       - "*"
     paths:
-      - ".github/"
+      - ".github/**"
   pull_request:
     paths:
-      - "Firmware/"
+      - "Firmware/**"
 
 jobs:
   cmake:
