@@ -13,7 +13,7 @@ make
 
 ## Flashing
 
-Idk yet
+See the `bootloader/README.md` for details
 
 
 ## Credits
