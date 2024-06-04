@@ -20,6 +20,4 @@ typedef struct
     Console console;                  // What console to send the return to
 } Command_t;
 
-void usb_console(void *pvParams);
-
 #endif

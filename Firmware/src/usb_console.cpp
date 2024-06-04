@@ -24,7 +24,6 @@ void usb_console(void *pvParams)
     // Setup variables we'll need
     int _buf;
 
-    stdio_usb_init();
     stdio_flush();
 
     while (true)
