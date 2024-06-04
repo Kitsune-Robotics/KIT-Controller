@@ -1,6 +1,7 @@
 add_executable(${ProjectName}
     main.cpp
     usb_console.cpp
+    parser.cpp
 )
 
 target_include_directories(${ProjectName} PRIVATE
@@ -8,8 +9,9 @@ target_include_directories(${ProjectName} PRIVATE
 )
 
 target_link_libraries(${ProjectName} 
-    pico_stdlib 
-    FreeRTOS-Kernel-Heap4 
+    pico_stdlib                # Obviously we need this one
+    FreeRTOS-Kernel-Heap4      # From FreeRTOS
+    cmake_git_version_tracking # https://github.com/andrew-hardin/cmake-git-version-tracking Very handy library!
     )
 
 # Setting these will configure USB for serial output and disable uart

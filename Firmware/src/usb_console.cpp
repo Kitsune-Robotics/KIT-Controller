@@ -1,13 +1,16 @@
 /* Raspberry Pi */
 #include <stdio.h>
 #include "pico/stdlib.h"
+#include "malloc.h"
 
 /* FreeRTOS */
 #include "FreeRTOS.h"
 #include "task.h"
 
 // Local
+#include "local_queues.h"
 #include "usb_console.h"
+#include "parser.h"
 
 void usb_console(void *pvParams)
 {
@@ -21,29 +24,51 @@ void usb_console(void *pvParams)
      * there wont be a USB serial interface like this used on the actual robot.
      */
 
-    // Setup variables we'll need
-    int _buf;
+    char inputBuffer[MAX_COMMAND_LENGTH];
+    int bufIndex = 0;
+    int ch;
 
     stdio_flush();
 
     while (true)
     {
-        // Read and echo each character
+        ch = getchar_timeout_us(0);
 
-        // check if the line is complete
-        // if it is, add a formatted Command_t to the cmdQueue
-
-        _buf = getchar_timeout_us(0);
-
-        if (_buf != PICO_ERROR_TIMEOUT)
+        if (ch != PICO_ERROR_TIMEOUT)
         {
-            printf("%c", _buf);
+            printf("%c", ch);                     // Echo the character
+            if (ch == '\n' || ch == '\r')         // If you read this char.. you're done!
+            {                                     //
+                if (bufIndex > 0)                 // Double check that the bufIndex has moved at least 1 char
+                {                                 //
+                    inputBuffer[bufIndex] = '\0'; // Null-terminate the string
+
+                    // Allocate memory for a new command
+                    Command_t *cmd = (Command_t *)malloc(sizeof(Command_t));
+                    if (cmd != NULL)
+                    {
+                        parseCommand(inputBuffer, cmd);
+
+                        // Add the command to the queue
+                        if (xQueueSend(cmdQueue, &cmd, portMAX_DELAY) != pdPASS)
+                        {
+                            // Handle the error (e.g., queue is full)
+                            free(cmd);
+                            printf("\nCommand in queue.\n");
+                        }
+                    }
+
+                    bufIndex = 0; // Reset buffer index for the next command
+                }
+            }
+            else if (bufIndex < MAX_COMMAND_LENGTH - 1)
+            {
+                inputBuffer[bufIndex++] = ch; // Add character to buffer
+            }
         }
         else
         {
-            // I've put the delay here so if we read a long string of chars quickly (like copy/paste)
-            // we evacuate the buffer as fast as we can
-            vTaskDelay(100);
+            vTaskDelay(100 / portTICK_PERIOD_MS); // Delay to allow the buffer to fill
         }
     }
 }
