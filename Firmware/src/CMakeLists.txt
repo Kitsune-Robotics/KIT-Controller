@@ -11,4 +11,8 @@ target_link_libraries(${ProjectName}
     FreeRTOS-Kernel-Heap4 
     )
 
+# Setting these will configure USB for serial output and disable uart
+pico_enable_stdio_usb(${ProjectName} 1)
+pico_enable_stdio_uart(${ProjectName} 0)
+
 pico_add_extra_outputs(${ProjectName})
