@@ -1,0 +1,37 @@
+name: Firmware
+
+on:
+  push:
+    branches:
+      - "main"
+    tags:
+      - "*"
+    paths:
+      - ".github/**"
+  pull_request:
+    paths:
+      - "Firmware/**"
+
+env:
+  PICO_SDK_FETCH_FROM_GIT: true
+
+jobs:
+  cmake:
+    runs-on: ubuntu-latest
+    name: Build With cmake
+
+    steps:
+      - uses: actions/checkout@v4
+        name: Checkout Repo
+        with:
+          fetch-depth: 0
+          submodules: true
+
+      - uses: carlosperate/arm-none-eabi-gcc-action@v1
+        name: Install the GCC ARM compiler
+
+      - uses: threeal/cmake-action@main
+        name: Configure and Build Project
+        with:
+          source-dir: Firmware
+          build-dir: Firmware/build

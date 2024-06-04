@@ -1,5 +1,0 @@
-wiper_servo:
-  pin: 17
-  min_pulse: 0.000544
-  max_pulse: 0.0024
-

@@ -10,3 +10,12 @@
 [submodule "Hardware/Dev_Card/Libraries/kenwoodfox-kicad-libraries"]
 	path = Hardware/Dev_Card/Libraries/kenwoodfox-kicad-libraries
 	url = https://github.com/KenwoodFox/kenwoodfox-kicad-libraries.git
+[submodule "Firmware/lib/FreeRTOS-Kernel"]
+	path = Firmware/lib/FreeRTOS-Kernel
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel
+[submodule "Firmware/bootloader/rp2040-remote-bootloader"]
+	path = Firmware/bootloader/rp2040-remote-bootloader
+	url = https://github.com/Kitsune-Robotics/rp2040-remote-bootloader
+[submodule "Firmware/bootloader/rp2040-radio-bootloader"]
+	path = Firmware/bootloader/rp2040-radio-bootloader
+	url = https://github.com/Kitsune-Robotics/rp2040-radio-bootloader
