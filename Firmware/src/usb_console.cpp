@@ -7,7 +7,7 @@
 #include "task.h"
 
 // Local
-#include "console.h"
+#include "usb_console.h"
 
 void usb_console(void *pvParams)
 {

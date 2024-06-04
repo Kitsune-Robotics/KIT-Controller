@@ -8,7 +8,8 @@
 #include "queue.h"
 
 // Our own
-#include "console.h"
+#include "console.h"     // Parent data for all consoles
+#include "usb_console.h" // USB serial console
 
 // Queues
 static QueueHandle_t cmdQueue = NULL;
