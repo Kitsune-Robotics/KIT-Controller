@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 
-void led_task()
+void led_task(void *pvParams)
 {
     const uint LED_PIN = 13;
     gpio_init(LED_PIN);
