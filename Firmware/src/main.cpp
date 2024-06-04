@@ -1,4 +1,4 @@
-/* Raspberry Pi Libs */
+/* Raspberry Pi */
 #include <stdio.h>
 #include "pico/stdlib.h"
 
@@ -7,16 +7,8 @@
 #include "task.h"
 #include "queue.h"
 
-// This wont stay here
-#define MAX_COMMAND_LENGTH 256
-#define MAX_ARGS 10
-#define MAX_ARG_LENGTH 32
-typedef struct
-{
-    char command[MAX_COMMAND_LENGTH]; // Full command string
-    char *argv[MAX_ARGS];             // Pointers to arguments
-    int argc;                         // Argument count
-} Command_t;
+// Our own
+#include "console.h"
 
 // Queues
 static QueueHandle_t cmdQueue = NULL;
@@ -31,24 +23,6 @@ void led_task(void *pvParams)
         gpio_put(LED_PIN, 1);
         vTaskDelay(100);
         gpio_put(LED_PIN, 0);
-        vTaskDelay(100);
-    }
-}
-
-void usb_console(void *pvParams)
-{
-    // Setup variables we'll need
-
-    while (true)
-    {
-        // Read and echo each character
-
-        // check if the line is complete
-        // if it is, add a formatted Command_t to the cmdQueue
-
-        printf("Hello world!\n");
-
-        // Short delay
         vTaskDelay(100);
     }
 }
