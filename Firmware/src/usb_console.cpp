@@ -48,14 +48,19 @@ void usb_console(void *pvParams)
                     if (cmd != NULL)
                     {
                         parseCommand(inputBuffer, cmd);
+                        printf("\n [~] %s\n", cmd->command);
 
-                        // Add the command to the queue
-                        if (xQueueSend(cmdQueue, &cmd, portMAX_DELAY) != pdPASS)
+                        printf("%d\n", cmd->argc);
+                        printf("%d\n", cmd->console);
+
+                        // // Add the command to the queue
+                        if (xQueueSend(cmdQueue, &cmd, 200) != pdPASS)
                         {
                             // Handle the error (e.g., queue is full)
-                            free(cmd);
-                            printf("\nCommand in queue.\n");
+                            printf("Could not queue cmd.\n");
                         }
+
+                        free(cmd);
                     }
 
                     bufIndex = 0; // Reset buffer index for the next command

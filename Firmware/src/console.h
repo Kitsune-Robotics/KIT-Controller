@@ -3,7 +3,6 @@
 
 #define MAX_COMMAND_LENGTH 256
 #define MAX_ARGS 10
-#define MAX_ARG_LENGTH 32
 
 enum Console
 {
