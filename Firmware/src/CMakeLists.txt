@@ -16,15 +16,19 @@ add_executable(${ProjectName}
     usb_console.c
     parser.c
     led_task.c
+    can_controller.c
 )
 
 target_include_directories(${ProjectName} PRIVATE
     ${CMAKE_CURRENT_LIST_DIR}
+    ${CMAKE_CURRENT_LIST_DIR}/../lib/pico-mcp2515/include # MCP_CAN library
 )
 
 target_link_libraries(${ProjectName} 
     pico_stdlib                # Obviously we need this one
+    hardware_spi               # SPI library pico
     FreeRTOS-Kernel-Heap4      # From FreeRTOS
+    pcio-mcp2515               # MCP_CAN library
     cmake_git_version_tracking # https://github.com/andrew-hardin/cmake-git-version-tracking Very handy library!
     )
 

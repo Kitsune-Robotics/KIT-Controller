@@ -19,3 +19,6 @@
 [submodule "Firmware/bootloader/rp2040-radio-bootloader"]
 	path = Firmware/bootloader/rp2040-radio-bootloader
 	url = https://github.com/Kitsune-Robotics/rp2040-radio-bootloader
+[submodule "Firmware/lib/pico-mcp2515"]
+	path = Firmware/lib/pico-mcp2515
+	url = https://github.com/adamczykpiotr/pico-mcp2515
