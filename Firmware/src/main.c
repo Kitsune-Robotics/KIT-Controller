@@ -16,22 +16,10 @@
 #include "console.h"            // Parent data for all consoles
 #include "usb_console.h"        // USB serial console
 #include "command_dispatcher.h" // Functions for dispatching commands
+#include "led_task.h"           // Manages LED functions
 
 // Global Definitions
 QueueHandle_t cmdQueue = NULL;
-
-void led_task(void *pvParams)
-{
-    gpio_init(PIN_ONBOARD_LED);
-    gpio_set_dir(PIN_ONBOARD_LED, GPIO_OUT);
-    while (true)
-    {
-        gpio_put(PIN_ONBOARD_LED, 1);
-        vTaskDelay(100);
-        gpio_put(PIN_ONBOARD_LED, 0);
-        vTaskDelay(100);
-    }
-}
 
 int main()
 {

@@ -10,6 +10,7 @@
 #include "local_queues.h"
 #include "usb_console.h"
 #include "parser.h"
+#include "led_task.h"
 
 void usb_console(void *pvParams)
 {
@@ -41,6 +42,7 @@ void usb_console(void *pvParams)
         }
 
         printf("%c", ch); // Echo the character back to the console
+        busy();           // Animate busy LEDs
 
         if (!(ch == '\n' || ch == '\r')) // Not end-of-line, continue buffering input
         {

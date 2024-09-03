@@ -33,6 +33,8 @@ void handleHelpCommand(Command_t *cmd)
 
 void processCommand(Command_t *cmd)
 {
+    busy(); // Let the LED task know we're busy
+
     if (cmd == NULL)
     {
         console_printf(USB, "Received a NULL command, nothing to process.\n");

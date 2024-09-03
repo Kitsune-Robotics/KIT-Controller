@@ -15,6 +15,7 @@ add_executable(${ProjectName}
     command_dispatcher.c
     usb_console.c
     parser.c
+    led_task.c
 )
 
 target_include_directories(${ProjectName} PRIVATE

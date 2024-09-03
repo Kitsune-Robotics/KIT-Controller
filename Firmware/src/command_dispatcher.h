@@ -13,6 +13,7 @@
 /* Local Includes */
 #include "local_queues.h"
 #include "parser.h"
+#include "led_task.h"
 
 /* Function pointer type for command handlers */
 typedef void (*CommandHandler_t)(Command_t *);
