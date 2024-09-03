@@ -1,4 +1,5 @@
 #include "command_dispatcher.h"
+#include "git.h"
 
 // Define the command mapping table
 const CommandMapping_t commandTable[] = {
@@ -10,7 +11,7 @@ const CommandMapping_t commandTable[] = {
 // Simple retrieve version
 void handleVersionCommand(Command_t *cmd)
 {
-    console_printf(cmd->console, "Firmware version: %s\n", "1.2.3.4");
+    console_printf(cmd->console, "Firmware version: %s, There are %suncommitted changes\n", git_Describe(), git_AnyUncommittedChanges() ? "" : "no");
 }
 
 // Handling an unknown command
