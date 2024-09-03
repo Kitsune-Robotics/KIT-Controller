@@ -11,7 +11,7 @@ const CommandMapping_t commandTable[] = {
 // Simple retrieve version
 void handleVersionCommand(Command_t *cmd)
 {
-    console_printf(cmd->console, "Firmware version: %s, There are %suncommitted changes\n", git_Describe(), git_AnyUncommittedChanges() ? "" : "no");
+    console_printf(cmd->console, "Firmware version: %s, There are %suncommitted changes\n", git_Describe(), git_AnyUncommittedChanges() ? "" : "no ");
 }
 
 // Handling an unknown command
