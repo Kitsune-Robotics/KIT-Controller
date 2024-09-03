@@ -8,7 +8,7 @@ enum Console
 {
     USB,
     RADIO,
-    INTERNAL,
+    BROADCAST,
 };
 
 typedef struct
@@ -18,5 +18,8 @@ typedef struct
     int argc;                         // Argument count
     enum Console console;             // What console to send the return to
 } Command_t;
+
+// Declare the centralized print function
+void console_printf(enum Console console, const char *format, ...);
 
 #endif

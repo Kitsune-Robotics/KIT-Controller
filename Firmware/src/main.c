@@ -13,8 +13,9 @@
 // Our own
 #include "pindefs.h"
 #include "local_queues.h"
-#include "console.h"     // Parent data for all consoles
-#include "usb_console.h" // USB serial console
+#include "console.h"            // Parent data for all consoles
+#include "usb_console.h"        // USB serial console
+#include "command_dispatcher.h" // Functions for dispatching commands
 
 // Global Definitions
 QueueHandle_t cmdQueue = NULL;
@@ -31,41 +32,6 @@ void led_task(void *pvParams)
         vTaskDelay(100);
     }
 }
-
-// void processCommand(Command_t *cmd);
-
-void commandDispatcherTask(void *pvParameters)
-{
-    uint cmd;
-
-    for (;;)
-    {
-        // Technically portMAX_DELAY is not... forever, its like a few months but...
-        if (xQueueReceive(cmdQueue, &cmd, portMAX_DELAY) == pdPASS)
-        {
-            // Process the command
-            // processCommand(cmd);
-            printf("Arg %d", cmd);
-
-            // Free the allocated memory for the command
-            // free(cmd);
-        }
-    }
-}
-
-// void processCommand(Command_t *cmd)
-// {
-//     // Example command processing
-//     if (strcmp(cmd->argv[0], "cmd") == 0)
-//     {
-//         // Handle the command
-//         printf("Command: %s\n", cmd->argv[0]);
-//         for (int i = 1; i < cmd->argc; i++)
-//         {
-//             printf("Arg %d: %s\n", i, cmd->argv[i]);
-//         }
-//     }
-// }
 
 int main()
 {
@@ -84,7 +50,7 @@ int main()
 
     // FreeRTOS Create tasks
     xTaskCreate(led_task, "LED_Task", 256, NULL, 1, NULL);
-    // xTaskCreate(commandDispatcherTask, "CmdDispatcher", 512, NULL, 1, NULL);
+    xTaskCreate(commandDispatcherTask, "CmdDispatcher", 512, NULL, 1, NULL);
     xTaskCreate(usb_console, "USB_Console", 1024, NULL, 1, NULL);
 
     // Begin scheduler

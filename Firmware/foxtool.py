@@ -40,7 +40,7 @@ def flash():
 
     try:
         print(f"Copying {uf2_file}")
-        subprocess.run(["picotool", "load", uf2_file], check=True)
+        subprocess.run(["picotool", "load", "-f", uf2_file], check=True)
 
         print("Rebooting...")
         subprocess.run(["picotool", "reboot"], check=True)

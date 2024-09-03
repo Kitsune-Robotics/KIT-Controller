@@ -59,14 +59,15 @@ void usb_console(void *pvParams)
             {
                 parseCommand(inputBuffer, cmd); // Parse input into command structure
 
-                printf("\n [~] Command: %s\n", cmd->command);
-                printf("Arg count: %d\n", cmd->argc);
-                printf("Console: %d\n", cmd->console);
+                // This is the USB console
+                cmd->console = USB;
+
+                console_printf(USB, "\n Sending Command: %s\n with %d args\n", cmd->command, cmd->argc);
 
                 // Check if the queue is initialized
                 if (cmdQueue == NULL)
                 {
-                    printf("Error! cmdQueue not ready or uninitialized.\n");
+                    console_printf(USB, "Error! cmdQueue not ready or uninitialized.\n");
                     vPortFree(cmd); // Free allocated memory if queue is not ready
                     continue;
                 }
@@ -75,7 +76,7 @@ void usb_console(void *pvParams)
                 if (xQueueSend(cmdQueue, &cmd, 0U) != pdPASS)
                 {
                     // Queue is full or sending failed
-                    printf("Could not queue cmd. Queue might be full.\n");
+                    console_printf(USB, "Could not queue cmd. Queue might be full.\n");
                     vPortFree(cmd); // Free allocated memory if not added to the queue
                 }
 
@@ -83,7 +84,7 @@ void usb_console(void *pvParams)
             }
             else
             {
-                printf("Memory allocation failed for Command_t!\n");
+                console_printf(USB, "Memory allocation failed for Command_t!\n");
             }
 
             bufIndex = 0; // Reset buffer index for the next command

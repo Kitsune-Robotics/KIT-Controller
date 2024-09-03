@@ -11,6 +11,8 @@ pico_sdk_init()
 
 add_executable(${ProjectName}
     main.c
+    console.c
+    command_dispatcher.c
     usb_console.c
     parser.c
 )
