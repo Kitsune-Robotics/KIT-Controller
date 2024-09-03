@@ -52,6 +52,7 @@ void usb_console(void *pvParams)
         else // End of line received
         {
             inputBuffer[bufIndex] = '\0'; // Null-terminate the string
+            printf("\n");                 // New line after
 
             // Allocate memory for a new command
             Command_t *cmd = (Command_t *)pvPortMalloc(sizeof(Command_t));
@@ -62,7 +63,7 @@ void usb_console(void *pvParams)
                 // This is the USB console
                 cmd->console = USB;
 
-                console_printf(USB, "\n Sending Command: %s\n with %d args\n", cmd->command, cmd->argc);
+                console_printf(USB, "Sending Command: %s with %d args\n", cmd->command, cmd->argc);
 
                 // Check if the queue is initialized
                 if (cmdQueue == NULL)
