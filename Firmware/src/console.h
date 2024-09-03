@@ -16,7 +16,7 @@ typedef struct
     char command[MAX_COMMAND_LENGTH]; // Full command string
     char *argv[MAX_ARGS];             // Pointers to arguments
     int argc;                         // Argument count
-    Console console;                  // What console to send the return to
+    enum Console console;             // What console to send the return to
 } Command_t;
 
 #endif

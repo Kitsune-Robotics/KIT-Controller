@@ -1,7 +1,18 @@
+set(PROJECT kit_controller)
+
+# Just the version i was using at the time
+cmake_minimum_required(VERSION 3.30)
+
+# pico_sdk_import
+include(../pico_sdk_import.cmake)
+
+project(${PROJECT} C CXX)
+pico_sdk_init()
+
 add_executable(${ProjectName}
-    main.cpp
-    usb_console.cpp
-    parser.cpp
+    main.c
+    usb_console.c
+    parser.c
 )
 
 target_include_directories(${ProjectName} PRIVATE
