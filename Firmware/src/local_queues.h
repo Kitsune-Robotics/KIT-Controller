@@ -1,11 +1,11 @@
-#ifndef queues_h
-#define queues_h
+#ifndef LOCAL_QUEUES_H
+#define LOCAL_QUEUES_H
 
 /* FreeRTOS */
 #include "FreeRTOS.h"
 #include "queue.h"
 
 // Queues
-static QueueHandle_t cmdQueue = NULL;
+extern QueueHandle_t cmdQueue;
 
-#endif
+#endif // LOCAL_QUEUES_H

@@ -16,6 +16,9 @@
 #include "console.h"     // Parent data for all consoles
 #include "usb_console.h" // USB serial console
 
+// Global Definitions
+QueueHandle_t cmdQueue = NULL;
+
 void led_task(void *pvParams)
 {
     gpio_init(PIN_ONBOARD_LED);
