@@ -1,11 +1,13 @@
 #include "command_dispatcher.h"
 #include "git.h"
+#include "can_controller.h"
 
 // Define the command mapping table
 const CommandMapping_t commandTable[] = {
-    {"version", handleVersionCommand}, // Prints the version
-    {"help", handleHelpCommand},       // Prints the help
-    {NULL, handleUnknownCommand}       // Default handler for unknown commands
+    {"version", handleVersionCommand},  // Prints the version
+    {"help", handleHelpCommand},        // Prints the help
+    {"canstatus", request_can_version}, // Gets the status from the canbus
+    {NULL, handleUnknownCommand}        // Default handler for unknown commands
 };
 
 // Simple retrieve version

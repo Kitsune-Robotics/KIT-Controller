@@ -14,7 +14,7 @@
 #include "usb_console.h"        // USB serial console
 #include "command_dispatcher.h" // Functions for dispatching commands
 #include "led_task.h"           // Manages LED functions
-// #include "can_controller.h"     // Manages the canbus
+#include "can_controller.h"     // Manages the canbus
 
 // Global Definitions
 QueueHandle_t cmdQueue = NULL;
@@ -36,7 +36,7 @@ int main()
 
     // FreeRTOS Create tasks
     xTaskCreate(led_task, "LED_Task", 256, NULL, 1, NULL);
-    // xTaskCreate(can_task, "CAN_Task", 512, NULL, 1, NULL);
+    xTaskCreate(can_task, "CAN_Task", 512, NULL, 1, NULL);
     xTaskCreate(commandDispatcherTask, "CmdDispatcher", 512, NULL, 1, NULL);
     xTaskCreate(usb_console, "USB_Console", 1024, NULL, 1, NULL);
 

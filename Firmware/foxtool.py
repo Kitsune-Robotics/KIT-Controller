@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 # Saw a lot of people using small python scripts to
 # help automate the process of getting the uf2 on the rp2040
 
