@@ -8,13 +8,17 @@
 
 enum CANCommands
 {
-    CAN_COMMAND_GET_VERSION
+    CAN_COMMAND_GET_STATUS,
+    CAN_COMMAND_SEND_FRAME
 };
 
 // Function to initialize and start the CAN task
 void can_task(void *pvParams);
 
 // Function to request version info from the MCP2515
-void request_can_version(Command_t *cmd);
+void request_can_status(Command_t *cmd);
+
+// Send a test frame via canbus
+void send_can_frame(Command_t *cmd);
 
 #endif // CAN_CONTROLLER_H

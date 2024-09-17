@@ -4,10 +4,11 @@
 
 // Define the command mapping table
 const CommandMapping_t commandTable[] = {
-    {"version", handleVersionCommand},  // Prints the version
-    {"help", handleHelpCommand},        // Prints the help
-    {"canstatus", request_can_version}, // Gets the status from the canbus
-    {NULL, handleUnknownCommand}        // Default handler for unknown commands
+    {"version", handleVersionCommand}, // Prints the version
+    {"help", handleHelpCommand},       // Prints the help
+    {"canstatus", request_can_status}, // Gets the status from the canbus
+    {"sendtestframe", send_can_frame}, // Send a test frame via canbus
+    {NULL, handleUnknownCommand}       // Default handler for unknown commands
 };
 
 // Simple retrieve version
